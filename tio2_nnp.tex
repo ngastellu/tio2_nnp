@@ -152,6 +152,14 @@ While this effect is most dramatic for the 768 atom system, every other nanopart
 \tab All four nanoparticles we ran these calculations exhibit weak correlation between the DFT-calculated energy values and the energies obtained using the MA potential. 
 Even more surprisingly we find that the two sets of energy values of the different conformations of the rutile lattice were even less correlated than the ones obtained from the amorphous nanoparticles. 
 Indeed, as can be seen in table \ref{stats}, our simulated rutile lattice yielded the lowest value of $\rho$ of all the systems we studied.
+In light of this extremely low correlation, we obviously cannot consider our simulated $r-\text{TiO}_2$ lattice a reference system. 
+However this is not overly problematic, it simply suggests that a purely classical two-body description of atomic interactions in $\text{TiO}_2$ in the amorphous or rutile phase is not sufficiently accurate to keep track of small changes in the system's configuration.
+Moreover the small RMSE values we get for all systems (except the 768-atom nanoparticle) and the fact that all classically obtained energies for a given system are very close to each other suggest that they are still physically sound at a less precise level of analysis.
+Indeed, if both sets of energy values for each system varied over intervals of similar sizes and yet remained as uncorrelated as we have observed them to be, then we would be in a position to question the validity of even trying to describe $\text{TiO}_2$ using only the MA potential in the first place.
+However this is not the case; for every system all energies computed classically differ very little.
+This is consistent with the fact that the atomic configurations from which such energies are computed were obtained from segments of our MD simulations where the system was already at equilibrium with its environment (i.e. the thermal bath) and thus did not vary greatly either.
+The contrast between the highly clustered classical values and the much more spread out quantum values could therefore suggest that the quantum description of $\text{TiO}_2$ is much more sensitive to changes in the system's conformational changes while using the MA potential cannot meaningfully register such changes yet still provides an internally consistent and physically viable picture of the system.
+[\textbf{Maybe: } This interpretation of our results is further corroborated by the higher $\rho$ values in smaller systems.] 
 
 \begin{table*}[]
 \begin{tabular}{c|c|c|c|c|c}
