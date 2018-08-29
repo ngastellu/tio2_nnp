@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.2)  29 AUG 2018 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.2)  29 AUG 2018 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -597,7 +597,11 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 44.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 44.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 44.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 44.
- (./tio2_nnp.aux)
+ (./tio2_nnp.aux
+
+LaTeX Warning: Label `nnp_198' multiply defined.
+
+)
 \openout1 = `tio2_nnp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -612,8 +616,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count131
@@ -644,33 +647,33 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 83.
 
 Package epstopdf Info: Source file: <./plots/nnp_198_scaled.eps>
-(epstopdf)                    date: 2018-08-23 11:11:09
-(epstopdf)                    size: 25059 bytes
+(epstopdf)                    date: 2018-08-29 12:52:32
+(epstopdf)                    size: 24812 bytes
 (epstopdf)             Output file: <./plots/nnp_198_scaled-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2018-08-27 10:05:34
-(epstopdf)                    size: 8416 bytes
+(epstopdf)                    date: 2018-08-29 13:45:22
+(epstopdf)                    size: 7754 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_198_scaled-eps
 -converted-to.pdf ./plots/nnp_198_scaled.eps>
-(epstopdf)             \includegraphics on input line 122.
+(epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
 <./plots/nnp_198_scaled-eps-converted-to.pdf, id=4, 361.35pt x 216.81pt>
 File: ./plots/nnp_198_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_198_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_198_scaled-eps-converted-to.pdf used on in
-put line 122.
+put line 123.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
 Package epstopdf Info: Source file: <./plots/nnp_390_scaled.eps>
-(epstopdf)                    date: 2018-08-23 11:11:09
-(epstopdf)                    size: 24364 bytes
+(epstopdf)                    date: 2018-08-29 12:54:08
+(epstopdf)                    size: 24738 bytes
 (epstopdf)             Output file: <./plots/nnp_390_scaled-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2018-08-27 10:05:35
-(epstopdf)                    size: 8050 bytes
+(epstopdf)                    date: 2018-08-29 13:45:22
+(epstopdf)                    size: 7594 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_390_scaled-eps
 -converted-to.pdf ./plots/nnp_390_scaled.eps>
-(epstopdf)             \includegraphics on input line 128.
+(epstopdf)             \includegraphics on input line 133.
 Package epstopdf Info: Output file is already uptodate.
 
 <./plots/nnp_390_scaled-eps-converted-to.pdf, id=5, 361.35pt x 216.81pt>
@@ -678,18 +681,18 @@ File: ./plots/nnp_390_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_390_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_390_scaled-eps-converted-to.pdf used on in
-put line 128.
+put line 133.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
 Package epstopdf Info: Source file: <./plots/nnp_768_fully_scaled.eps>
-(epstopdf)                    date: 2018-08-23 11:11:09
-(epstopdf)                    size: 24171 bytes
+(epstopdf)                    date: 2018-08-29 13:08:26
+(epstopdf)                    size: 23933 bytes
 (epstopdf)             Output file: <./plots/nnp_768_fully_scaled-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2018-08-27 10:05:35
-(epstopdf)                    size: 7462 bytes
+(epstopdf)                    date: 2018-08-29 13:45:23
+(epstopdf)                    size: 6817 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_768_fully_scal
 ed-eps-converted-to.pdf ./plots/nnp_768_fully_scaled.eps>
-(epstopdf)             \includegraphics on input line 138.
+(epstopdf)             \includegraphics on input line 147.
 Package epstopdf Info: Output file is already uptodate.
 
 <./plots/nnp_768_fully_scaled-eps-converted-to.pdf, id=6, 361.35pt x 216.81pt>
@@ -698,19 +701,19 @@ File: ./plots/nnp_768_fully_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_768_fully_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_768_fully_scaled-eps-converted-to.pdf used
- on input line 138.
+ on input line 147.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package epstopdf Info: Source file: <./plots/nnp_768_dilated.eps>
-(epstopdf)                    date: 2018-08-23 11:26:00
-(epstopdf)                    size: 24308 bytes
+(epstopdf)                    date: 2018-08-29 13:40:44
+(epstopdf)                    size: 23841 bytes
 (epstopdf)             Output file: <./plots/nnp_768_dilated-eps-converted-to.p
 df>
-(epstopdf)                    date: 2018-08-27 10:05:35
-(epstopdf)                    size: 8243 bytes
+(epstopdf)                    date: 2018-08-29 13:45:57
+(epstopdf)                    size: 7412 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_768_dilated-ep
 s-converted-to.pdf ./plots/nnp_768_dilated.eps>
-(epstopdf)             \includegraphics on input line 147.
+(epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
 
 <./plots/nnp_768_dilated-eps-converted-to.pdf, id=29, 361.35pt x 216.81pt>
@@ -718,47 +721,51 @@ File: ./plots/nnp_768_dilated-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_768_dilated-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_768_dilated-eps-converted-to.pdf used on i
-nput line 147.
+nput line 160.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
  [2 <./plots/nnp_198_scaled-eps-converted-to.pdf> <./plots/nnp_390_scaled-eps-c
-onverted-to.pdf>]
+onverted-to.pdf>] [3 <./plots/nnp_768_fully_scaled-eps-converted-to.pdf> <./plo
+ts/nnp_768_dilated-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 164.
+               Default added (so using `tbp') on input line 180.
 
-[3 <./plots/nnp_768_fully_scaled-eps-converted-to.pdf> <./plots/nnp_768_dilated
--eps-converted-to.pdf>] (./tio2_nnp.bbl) [4] (./tio2_nnp.aux) ) 
+(./tio2_nnp.bbl) [4] [5] (./tio2_nnp.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14418 strings out of 493089
- 270949 string characters out of 6134843
- 327262 words of memory out of 5000000
- 17587 multiletter control sequences out of 15000+600000
+ 14452 strings out of 493089
+ 271777 string characters out of 6134843
+ 330239 words of memory out of 5000000
+ 17621 multiletter control sequences out of 15000+600000
  18321 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,54p,441b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti9.pfb>
-Output written on tio2_nnp.pdf (4 pages, 221968 bytes).
+ 55i,13n,54p,441b,680s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on tio2_nnp.pdf (5 pages, 231124 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 123 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

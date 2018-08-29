@@ -118,35 +118,51 @@ We plot our results in figures 1-5.
 This allows us to gauge the accuracy of MA forcefield; if the classical and quantum mechanical results are well correlated, then the purely classical representation of the forces in the nanoparticles is sufficiently accurate to discriminate between slight variations in a given system's configuration and can therefore be used to simulate this system nanoparticles instead of DFT, which is much more computationally expensive.
 
 
-\begin{figure*}
-\includegraphics[scale=1]{./plots/nnp_198_scaled}
+\begin{figure*}[htb]
+\begin{tikzpicture}
+  \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_198_scaled}};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha)};
+\end{tikzpicture}
+\caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 198 atoms.}
 \label{nnp_198}
-\caption{DFT energy vs. classical energy for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 198 atoms.}
 \end{figure*}
 
-\begin{figure*}
-\includegraphics[scale=1]{./plots/nnp_390_scaled}
+\begin{figure*}[htb]
+\begin{tikzpicture}
+  \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_390_scaled}};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha)};
+\end{tikzpicture}
+\caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 390 atoms.}
 \label{nnp_390}
-\caption{DFT energy vs. classical energy for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 390 atoms.}
 \end{figure*}
 
 \tab Comparing the energies obtained using classical MD and those calculated using DFT reveals that a description of the forces inside an $a-\text{TiO}_2$ nanoparticle using only the two-body MA potential is not precise enough to yield an accurate representation of its potential energy surface (PES) (with respect to its atoms' positions).
 Indeed, plotting the energies yielded by both calculation methods reveals that DFT calculation methods are much more sensitive to a change in a given nanoparticle's atomic configuration than classical methods.
 
 
-\begin{figure*}
-\includegraphics[scale=1]{./plots/nnp_768_fully_scaled}
+\begin{figure*}[htb]
+\begin{tikzpicture}
+  \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_768_fully_scaled}};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha)};
+\end{tikzpicture}
+\caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 768 atoms.}
 \label{nnp_768}
-\caption{DFT energy vs. classical energy for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 768 atoms.}
 \end{figure*}
 
 \tab The system for which this is the most obvious is the 768 atom nanoparticle, for which all classically evaluated energies lie within $\sim 10^{-4}\,\text{Ha}$ of each other, while the energies obtained usinq quantum mechanical methods vary by $\sim 10^{-1}\,\text{Ha}$.
 While this effect is most dramatic for the 768 atom system, every other nanoparticle on which we ran similar calculations exhibit significant clustering of the energies obtained using the MA potential about their mean value, while their DFT energies spread out over a much larger interval\cite{realistic_nnp}.
 
-\begin{figure*}
-\includegraphics[scale=1]{./plots/nnp_768_dilated}
-\label{nnp_768_dilated}
+\begin{figure*}[htb]
+\begin{tikzpicture}
+  \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_768_dilated}};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$500\cdot (E_{\text{classical} - \bar{E}_{\text{classical}})}$ (Ha)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha)};
+\end{tikzpicture}
 \caption{Rescaled version of figure \ref{nnp_768}.}
+\label{nnp_198}
 \end{figure*}
     
 \tab All four nanoparticles we ran these calculations exhibit weak correlation between the DFT-calculated energy values and the energies obtained using the MA potential. 
