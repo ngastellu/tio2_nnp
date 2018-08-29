@@ -69,7 +69,7 @@ Using DFT to model $\text{TiO}_2$ nanoparticles
 
 \section*{Simulation details}
 
-\subsection*{Classical MD}
+\subsection{Classical MD}
 
 \tab All classical MD simulations described in this work were ran in the $NpT$ ensemble, using the Matsui-Akaogi (MA) potential to model the interactions between pairs of atoms.
 The MA potential was originally developed for classical MD simulations of the four main polytypes of crystalline $\text{TiO}_2$ and has been shown by previous studies to be the most adequate force field for predicting the structure and properties of its liquid and amorphous phases.
@@ -77,7 +77,7 @@ The MA potential describes the short-range interaction between atoms with a Buck
 \begin{equation}
 V_{ij}(r) = f_{0}\cdot (B_i+B_j)\cdot\text{exp}\big(\frac{A_i + A_j - r}{B_i + B_j}\big) - \frac{C_{i}C_j}{r^6} + \frac{e\,Z_i\,Z_j}{4\pi\epsilon_0 r}\: ,
 \end{equation}
-where $r$ denotes the distance between the two interacting ions $i$ and $j$, $e$ is the elementary charge, $Z_i$ is the dimensionless ionic charge of ion $i$, $f_0$ is a standard force of 4.184$\,$kJ$\text{mol}^{-1}\angstrom^{-1}$, and $A_i$, $B_i$, and $C_i$ are parameters corresponding to $i$.
+where $r$ denotes the distance between the two interacting ions $i$ and $j$, $e$ is the elementary charge, $Z_i$ is the dimensionless ionic charge of ion $i$, $f_0$ is a standard force of 4.184$\,$kJ$\text{mol}^{-1}\angstrom^{-1}$, and $A_i$, $B_i$, and $C_i$ are parameters corresponding to species $i$.
 The numerical values of the constants listed above are given in table \ref{classpot}.
 
 \begin{table}[]
@@ -94,26 +94,28 @@ O       & -1.098      & 1.6339            & 0.117            & 54.0             
 \end{table}
 
 \tab The atomic structures of the various $a-\text{TiO}_2$ nanoparticles described in this work were obtained in multiple steps.
-We started by melting rutile ($r-\text{TiO}_2$) nanocrystals of 198, 390, 768, and 1842 atoms respectively whose structures were previously optimized at the BLYP/DZVP-GTH level of theory (using a plane wave energy cutoff of 2100 Ry) using classical MD in the $NPT$ ensemble with $T = 2000\,$K and $P_{\text{ext},0} = 0.0\,$Pa. 
+We started by melting rutile ($r-\text{TiO}_2$) nanocrystals of 198, 390, 768, and 1842 atoms respectively whose structures were previously optimized at the BLYP/DZVP-GTH level of theory (using a plane wave energy cutoff of 2100 Ry) using classical MD in the $NpT$ ensemble with $T = 2000\,$K and $p_{\text{ext},0} = 0.0\,$Pa. 
 We ran this first round of simulations for 40000 timesteps of $\Delta t = 0.5\,$fs.
 The resulting melt was then cooled in three steps; classical MD simulations using the same potentials, ensemble, and number of steps were ran using $T = 1500\,$K,750$\,$K, and 300$\,$K successively, all with $\Delta t = 2.0\,$fs.
 This process simulated the annealing of the melted nanocrystals into a glass which we then studied using Kohn-Sham DFT.
 
-\tab Seeing as the MA potential was originally elaborated to describe the describe the structural properties of $r-\text{TiO}_2$, we also generated a set of conformations of a rutile lattice comprised of 72 atoms in the $NPT$ ensemble at $T = 300\,\text{K}$, using the same potential as described above.
+\tab Seeing as the MA potential was originally elaborated to describe the describe the structural properties of $r-\text{TiO}_2$, we also generated a set of conformations of a rutile lattice comprised of 72 atoms in the $NpT$ ensemble at $T = 300\,\text{K}$, using the same potential as described above.
 Doing so provided us with energy values which we expect to be well correlated with the ones we obtain with DFT methods, thus giving us a reference data set to which we could compare the rest of our results.
 
 \subsection{DFT calculations}
 
-\tab Having obtained equilibriated atomic structures for nanoparticles of different sizes, we sampled 100 conformations from the last 40 ps of the last cooling run, at which point all four nanoparticles were in equilibrium with $T = 300\,\text{K}$ thermal bath.
-We then ran single-point energy calculation using KS DFT at the PBE/DZVP level of theory, using a plane wave cutoff of 2000$\,$Ry.
-We also ran similar DFT calculations the different configurations of the rutile lattice that we mentioned in the previous section.
+\tab Having obtained equilibriated atomic structures for nanoparticles of different sizes, we sampled 101 conformations from the last $40\,$ps of the last cooling run, at which point all four nanoparticles were in equilibrium with $T = 300\,\text{K}$ thermal bath.
+We then ran a single-point energy calculation on each conformation using KS DFT at the PBE/DZVP level of theory, using a plane wave cutoff of 2000$\,$Ry.
+We also ran similar DFT calculations on the different configurations of the reference rutile lattice which we also sampled from the last $40\,$ps of the MD simulation we mentioned in the last paragraph of the last section.
 
 %\tab Our results are discussed in the next section and plotted in figures 1-5, in which we plot the DFT energies of every configuration of a given nanoparticle vs the classically computed energies of those same configurations.
 %We also added a $y = x$ line to help the reader any kind of correlation between both data sets. 
 
 \section*{Results and discussion}
 
-\tab For each nanoparticle, we compare the classically evaluated energy of every configuration against the energy obtained through a DFT calculation for that some configuration. 
+\subsection{Comparing classical forcefields to KS DFT}
+
+\tab For each nanoparticle, we compare the classically evaluated energy of every configuration with the energy obtained through a DFT calculation for that some configuration. 
 We plot our results in figures 1-5.
 This allows us to gauge the accuracy of MA forcefield; if the classical and quantum mechanical results are well correlated, then the purely classical representation of the forces in the nanoparticles is sufficiently accurate to discriminate between slight variations in a given system's configuration and can therefore be used to simulate this system nanoparticles instead of DFT, which is much more computationally expensive.
 
@@ -121,8 +123,8 @@ This allows us to gauge the accuracy of MA forcefield; if the classical and quan
 \begin{figure*}[htb]
 \begin{tikzpicture}
   \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_198_scaled}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha)};
-  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha)};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
 \end{tikzpicture}
 \caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 198 atoms.}
 \label{nnp_198}
@@ -131,8 +133,8 @@ This allows us to gauge the accuracy of MA forcefield; if the classical and quan
 \begin{figure*}[htb]
 \begin{tikzpicture}
   \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_390_scaled}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha)};
-  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha)};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
 \end{tikzpicture}
 \caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 390 atoms.}
 \label{nnp_390}
@@ -145,8 +147,8 @@ Indeed, plotting the energies yielded by both calculation methods reveals that D
 \begin{figure*}[htb]
 \begin{tikzpicture}
   \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_768_fully_scaled}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha)};
-  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha)};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
 \end{tikzpicture}
 \caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 768 atoms.}
 \label{nnp_768}
@@ -158,16 +160,27 @@ While this effect is most dramatic for the 768 atom system, every other nanopart
 \begin{figure*}[htb]
 \begin{tikzpicture}
   \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_768_dilated}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$500\cdot (E_{\text{classical} - \bar{E}_{\text{classical}})}$ (Ha)};
-  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha)};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$500\cdot (E_{\text{classical} - \bar{E}_{\text{classical}})}$ (Ha/atom)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
 \end{tikzpicture}
 \caption{Rescaled version of figure \ref{nnp_768}.}
-\label{nnp_198}
+\label{nnp_768d}
 \end{figure*}
     
 \tab All four nanoparticles we ran these calculations exhibit weak correlation between the DFT-calculated energy values and the energies obtained using the MA potential. 
 Even more surprisingly we find that the two sets of energy values of the different conformations of the rutile lattice were even less correlated than the ones obtained from the amorphous nanoparticles. 
 Indeed, as can be seen in table \ref{stats}, our simulated rutile lattice yielded the lowest value of $\rho$ of all the systems we studied.
+
+\begin{figure*}[htb]
+\begin{tikzpicture}
+  \node (img1)  {\includegraphics[scale=1.00]{./plots/rutile_72_scaled}};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
+\end{tikzpicture}
+\caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $r-\text{TiO}_2$ lattice with 72 atoms.}
+\label{rutile72}
+\end{figure*}
+
 In light of this extremely low correlation, we obviously cannot consider our simulated $r-\text{TiO}_2$ lattice a reference system. 
 However this is not overly problematic, it simply suggests that a purely classical two-body description of atomic interactions in $\text{TiO}_2$ in the amorphous or rutile phase is not sufficiently accurate to keep track of small changes in the system's configuration.
 Moreover the small RMSE values we get for all systems (except the 768-atom nanoparticle) and the fact that all classically obtained energies for a given system are very close to each other suggest that they are still physically sound at a less precise level of analysis.
@@ -186,6 +199,8 @@ RMSE   & 0.0486056                    & 0.0628487                    & 22.21090 
 \label{stats}
 \caption{Pearson correlation coefficient $\rho$ and RMSE between the energy values obtained through DFT and those obtained using the two-body MA potential on various configurations of different systems.}
 \end{table*}
+
+\subsection{Comparing ALMO DFT with KS DFT}
 
 \tab Having observed that DFT calculations are necessary to properly sample from an $a-\text{TiO}_2$ nanoparticle's PES, we are now faced with the problem posed by the computing power necessary to run such calculations on large systems (i.e. nanoparticles containing more than $\sim\,$1000 atoms).
 Seeing as computational expense is one of DFT's main drawbacks, a number of optimisation schemes have been proposed over the years to reduce both the amount of memory and the time necessary to run such calculations.
