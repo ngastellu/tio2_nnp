@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{1}%
+\begin{thebibliography}{4}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,15 +50,41 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {Selli}\ \emph {et~al.}(2017)\citenamefont {Selli},
-  \citenamefont {Fazio},\ and\ \citenamefont {Di~Valentin}}]{realistic_nnp}%
+\bibitem [{\citenamefont {Matsui}\ and\ \citenamefont {Akaogi}(1991)}]{MA_og}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Daniele}\ \bibnamefont
-  {Selli}}, \bibinfo {author} {\bibfnamefont {Gianluca}\ \bibnamefont {Fazio}},
-  \ and\ \bibinfo {author} {\bibfnamefont {Cristiana}\ \bibnamefont
-  {Di~Valentin}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Using
-  density functional theory to model realistic tio2 nanoparticles, their
-  photoactivation and interaction with water},}\ }\href@noop {} {\bibfield
-  {journal} {\bibinfo  {journal} {Catalysts}\ }\textbf {\bibinfo {volume}
-  {7}},\ \bibinfo {pages} {357} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Masanori}\
+  \bibnamefont {Matsui}}\ and\ \bibinfo {author} {\bibfnamefont {Masaki}\
+  \bibnamefont {Akaogi}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {Molecular dynamics simulation of the structural and physical properties of
+  the four polymorphs of tio2},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Molecular Simulation}\ }\textbf {\bibinfo {volume}
+  {6}},\ \bibinfo {pages} {239--244} (\bibinfo {year} {1991})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Collins}\ and\ \citenamefont
+  {Smith}(1996)}]{smith_collins}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {DR}~\bibnamefont
+  {Collins}}\ and\ \bibinfo {author} {\bibfnamefont {W}~\bibnamefont {Smith}},\
+  }\href@noop {} {\emph {\bibinfo {title} {Daresbury Research Report
+  DL-TR-96-001: Evaluation of $\text{TiO}_2 force fields.$}}},\ \bibinfo {type}
+  {Tech. Rep.}\ (\bibinfo  {institution} {Council for the Central Laboratory of
+  Research Councils},\ \bibinfo {year} {1996})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Alimohammadi}\ and\ \citenamefont
+  {Fichthorn}(2009)}]{fichtorn}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Mozhgan}\ \bibnamefont
+  {Alimohammadi}}\ and\ \bibinfo {author} {\bibfnamefont {Kristen~A}\
+  \bibnamefont {Fichthorn}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {Molecular dynamics simulation of the aggregation of titanium dioxide
+  nanocrystals: preferential alignment},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nano letters}\ }\textbf {\bibinfo {volume} {9}},\
+  \bibinfo {pages} {4198--4203} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Van~Hoang}(2007)}]{vvh2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Vo}~\bibnamefont
+  {Van~Hoang}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Structural
+  properties of simulated liquid and amorphous tio2},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {physica status solidi (b)}\
+  }\textbf {\bibinfo {volume} {244}},\ \bibinfo {pages} {1280--1287} (\bibinfo
+  {year} {2007})}\BibitemShut {NoStop}%
 \end{thebibliography}%

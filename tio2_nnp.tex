@@ -67,12 +67,23 @@ Using DFT to model $\text{TiO}_2$ nanoparticles
 
 \section*{Introduction} 
 
+\textbf{Main focus = Accuracy}
+
+$\bullet$ Accuracy of classical forcefields
+
+$\bullet$ Accuracy of ALMO DFT
+
+$\bullet$ Reference = KS DFT
+
+$\bullet$ System = amorphous titania nanoparticles (mention why this system is physically relevant)
+
 \section*{Simulation details}
 
 \subsection{Classical MD}
 
 \tab All classical MD simulations described in this work were ran in the $NpT$ ensemble, using the Matsui-Akaogi (MA) potential to model the interactions between pairs of atoms.
-The MA potential was originally developed for classical MD simulations of the four main polytypes of crystalline $\text{TiO}_2$ and has been shown by previous studies to be the most adequate force field for predicting the structure and properties of its liquid and amorphous phases.
+The MA potential was originally developed for classical MD simulations of the four main polytypes of crystalline $\text{TiO}_2$\cite{MA_og} to accurately simulate the structural properties of titania's four main polytypes and the elastic constants of rutile ($r-\text{TiO}_2$). 
+It is the most widely used potential when classically simulating bulk $\text{TiO}_2$ and has been shown by previous studies\cite{smith_collins,fichtorn,vvh2007} to be the most adequate force field for predicting the structure and properties of its liquid and amorphous phases.
 The MA potential describes the short-range interaction between atoms with a Buckingham potential and their long-range electrostatic interaction using the traditional Coulomb term:
 \begin{equation}
 V_{ij}(r) = f_{0}\cdot (B_i+B_j)\cdot\text{exp}\big(\frac{A_i + A_j - r}{B_i + B_j}\big) - \frac{C_{i}C_j}{r^6} + \frac{e\,Z_i\,Z_j}{4\pi\epsilon_0 r}\: ,
@@ -143,43 +154,12 @@ This allows us to gauge the accuracy of MA forcefield; if the classical and quan
 \tab Comparing the energies obtained using classical MD and those calculated using DFT reveals that a description of the forces inside an $a-\text{TiO}_2$ nanoparticle using only the two-body MA potential is not precise enough to yield an accurate representation of its potential energy surface (PES) (with respect to its atoms' positions).
 Indeed, plotting the energies yielded by both calculation methods reveals that DFT calculation methods are much more sensitive to a change in a given nanoparticle's atomic configuration than classical methods.
 
-
-\begin{figure*}[htb]
-\begin{tikzpicture}
-  \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_768_fully_scaled}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
-  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
-\end{tikzpicture}
-\caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 768 atoms.}
-\label{nnp_768}
-\end{figure*}
-
 \tab The system for which this is the most obvious is the 768 atom nanoparticle, for which all classically evaluated energies lie within $\sim 10^{-4}\,\text{Ha}$ of each other, while the energies obtained usinq quantum mechanical methods vary by $\sim 10^{-1}\,\text{Ha}$.
-While this effect is most dramatic for the 768 atom system, every other nanoparticle on which we ran similar calculations exhibit significant clustering of the energies obtained using the MA potential about their mean value, while their DFT energies spread out over a much larger interval\cite{realistic_nnp}.
-
-\begin{figure*}[htb]
-\begin{tikzpicture}
-  \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_768_dilated}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$500\cdot (E_{\text{classical} - \bar{E}_{\text{classical}})}$ (Ha/atom)};
-  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
-\end{tikzpicture}
-\caption{Rescaled version of figure \ref{nnp_768}.}
-\label{nnp_768d}
-\end{figure*}
+While this effect is most dramatic for the 768 atom system, every other nanoparticle on which we ran similar calculations exhibit significant clustering of the energies obtained using the MA potential about their mean value, while their DFT energies spread out over a much larger interval.
     
 \tab All four nanoparticles we ran these calculations exhibit weak correlation between the DFT-calculated energy values and the energies obtained using the MA potential. 
 Even more surprisingly we find that the two sets of energy values of the different conformations of the rutile lattice were even less correlated than the ones obtained from the amorphous nanoparticles. 
 Indeed, as can be seen in table \ref{stats}, our simulated rutile lattice yielded the lowest value of $\rho$ of all the systems we studied.
-
-\begin{figure*}[htb]
-\begin{tikzpicture}
-  \node (img1)  {\includegraphics[scale=1.00]{./plots/rutile_72_scaled}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
-  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
-\end{tikzpicture}
-\caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $r-\text{TiO}_2$ lattice with 72 atoms.}
-\label{rutile72}
-\end{figure*}
 
 In light of this extremely low correlation, we obviously cannot consider our simulated $r-\text{TiO}_2$ lattice a reference system. 
 However this is not overly problematic, it simply suggests that a purely classical two-body description of atomic interactions in $\text{TiO}_2$ in the amorphous or rutile phase is not sufficiently accurate to keep track of small changes in the system's configuration.
@@ -199,6 +179,36 @@ RMSE   & 0.0486056                    & 0.0628487                    & 22.21090 
 \label{stats}
 \caption{Pearson correlation coefficient $\rho$ and RMSE between the energy values obtained through DFT and those obtained using the two-body MA potential on various configurations of different systems.}
 \end{table*}
+
+\begin{figure*}[htb]
+\begin{tikzpicture}
+  \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_768_fully_scaled}};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
+\end{tikzpicture}
+\caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 768 atoms.}
+\label{nnp_768}
+\end{figure*}
+
+\begin{figure*}[htb]
+\begin{tikzpicture}
+  \node (img1)  {\includegraphics[scale=1.00]{./plots/nnp_768_dilated}};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$500\cdot (E_{\text{classical} - \bar{E}_{\text{classical}})}$ (Ha/atom)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
+\end{tikzpicture}
+\caption{Rescaled version of figure \ref{nnp_768}.}
+\label{nnp_768d}
+\end{figure*}
+
+\begin{figure*}[htb]
+\begin{tikzpicture}
+  \node (img1)  {\includegraphics[scale=1.00]{./plots/rutile_72_scaled}};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
+\end{tikzpicture}
+\caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $r-\text{TiO}_2$ lattice with 72 atoms.}
+\label{rutile72}
+\end{figure*}
 
 \subsection{Comparing ALMO DFT with KS DFT}
 
