@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{4}%
+\begin{thebibliography}{15}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,6 +50,151 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
+\bibitem [{\citenamefont {Christensen}\ \emph {et~al.}(2000)\citenamefont
+  {Christensen}, \citenamefont {Dilks}, \citenamefont {Egerton},\ and\
+  \citenamefont {Temperley}}]{optical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~A.}\ \bibnamefont
+  {Christensen}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Dilks}},
+  \bibinfo {author} {\bibfnamefont {T.~A.}\ \bibnamefont {Egerton}}, \ and\
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Temperley}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {Infrared spectroscopic evaluation of the
+  photodegradation of paint part ii: The effect of uv intensity {\&} wavelength
+  on the degradation of acrylic films pigmented with titanium dioxide},}\
+  }\href {\doibase 10.1023/A:1004898913140} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Materials Science}\ }\textbf {\bibinfo {volume} {35}},\
+  \bibinfo {pages} {5353--5358} (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Vorotilov}\ \emph {et~al.}(1992)\citenamefont
+  {Vorotilov}, \citenamefont {Orlova},\ and\ \citenamefont
+  {Petrovsky}}]{thin-film}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.A.}\ \bibnamefont
+  {Vorotilov}}, \bibinfo {author} {\bibfnamefont {E.V.}\ \bibnamefont
+  {Orlova}}, \ and\ \bibinfo {author} {\bibfnamefont {V.I.}\ \bibnamefont
+  {Petrovsky}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Sol-gel tio2
+  films on silicon substrates},}\ }\href {\doibase
+  https://doi.org/10.1016/0040-6090(92)90120-Z} {\bibfield  {journal} {\bibinfo
+   {journal} {Thin Solid Films}\ }\textbf {\bibinfo {volume} {207}},\ \bibinfo
+  {pages} {180 -- 184} (\bibinfo {year} {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Perry}\ and\ \citenamefont
+  {Pulker}(1985)}]{mechanical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {AJ}~\bibnamefont
+  {Perry}}\ and\ \bibinfo {author} {\bibfnamefont {HK}~\bibnamefont {Pulker}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Hardness, adhesion and
+  abrasion resistance of tio2 films on glass},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Thin Solid Films}\ }\textbf {\bibinfo
+  {volume} {124}},\ \bibinfo {pages} {323--333} (\bibinfo {year}
+  {1985})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ma}\ \emph {et~al.}(2014)\citenamefont {Ma},
+  \citenamefont {Wang}, \citenamefont {Jia}, \citenamefont {Chen},
+  \citenamefont {Han},\ and\ \citenamefont {Li}}]{photocatalytic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Yi}~\bibnamefont
+  {Ma}}, \bibinfo {author} {\bibfnamefont {Xiuli}\ \bibnamefont {Wang}},
+  \bibinfo {author} {\bibfnamefont {Yushuai}\ \bibnamefont {Jia}}, \bibinfo
+  {author} {\bibfnamefont {Xiaobo}\ \bibnamefont {Chen}}, \bibinfo {author}
+  {\bibfnamefont {Hongxian}\ \bibnamefont {Han}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {Can}\ \bibnamefont {Li}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {Titanium dioxide-based nanomaterials for photocatalytic
+  fuel generations},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Chemical reviews}\ }\textbf {\bibinfo {volume} {114}},\ \bibinfo
+  {pages} {9987--10043} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yin}\ \emph {et~al.}(2001)\citenamefont {Yin},
+  \citenamefont {Wada}, \citenamefont {Kitamura}, \citenamefont {Kambe},
+  \citenamefont {Murasawa}, \citenamefont {Mori}, \citenamefont {Sakata},\ and\
+  \citenamefont {Yanagida}}]{a2c}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Hengbo}\ \bibnamefont
+  {Yin}}, \bibinfo {author} {\bibfnamefont {Yuji}\ \bibnamefont {Wada}},
+  \bibinfo {author} {\bibfnamefont {Takayuki}\ \bibnamefont {Kitamura}},
+  \bibinfo {author} {\bibfnamefont {Shingo}\ \bibnamefont {Kambe}}, \bibinfo
+  {author} {\bibfnamefont {Sadao}\ \bibnamefont {Murasawa}}, \bibinfo {author}
+  {\bibfnamefont {Hirotaro}\ \bibnamefont {Mori}}, \bibinfo {author}
+  {\bibfnamefont {Takao}\ \bibnamefont {Sakata}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {Shozo}\ \bibnamefont {Yanagida}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {Hydrothermal synthesis of nanosized anatase and
+  rutile tio2 using amorphous phase tio2},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Materials Chemistry}\ }\textbf
+  {\bibinfo {volume} {11}},\ \bibinfo {pages} {1694--1703} (\bibinfo {year}
+  {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Prasai}\ \emph {et~al.}(2012)\citenamefont {Prasai},
+  \citenamefont {Cai}, \citenamefont {Underwood}, \citenamefont {Lewis},\ and\
+  \citenamefont {Drabold}}]{ab_initio}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Binay}\ \bibnamefont
+  {Prasai}}, \bibinfo {author} {\bibfnamefont {Bin}\ \bibnamefont {Cai}},
+  \bibinfo {author} {\bibfnamefont {M.~Kylee}\ \bibnamefont {Underwood}},
+  \bibinfo {author} {\bibfnamefont {James~P.}\ \bibnamefont {Lewis}}, \ and\
+  \bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont {Drabold}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Properties of amorphous and
+  crystalline titanium dioxide from first principles},}\ }\href {\doibase
+  10.1007/s10853-012-6439-6} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Materials Science}\ }\textbf {\bibinfo {volume} {47}},\ \bibinfo
+  {pages} {7515--7521} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zou}\ \emph {et~al.}(2010)\citenamefont {Zou},
+  \citenamefont {Gao},\ and\ \citenamefont {Xie}}]{useful1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Jian}\ \bibnamefont
+  {Zou}}, \bibinfo {author} {\bibfnamefont {Jiacheng}\ \bibnamefont {Gao}}, \
+  and\ \bibinfo {author} {\bibfnamefont {Fengyu}\ \bibnamefont {Xie}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {An amorphous tio2 sol
+  sensitized with h2o2 with the enhancement of photocatalytic activity},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Alloys
+  and Compounds}\ }\textbf {\bibinfo {volume} {497}},\ \bibinfo {pages}
+  {420--427} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kanna}\ \emph {et~al.}(2010)\citenamefont {Kanna},
+  \citenamefont {Wongnawa}, \citenamefont {Buddee}, \citenamefont
+  {Dilokkhunakul},\ and\ \citenamefont {Pinpithak}}]{useful2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Miki}\ \bibnamefont
+  {Kanna}}, \bibinfo {author} {\bibfnamefont {Sumpun}\ \bibnamefont
+  {Wongnawa}}, \bibinfo {author} {\bibfnamefont {Supat}\ \bibnamefont
+  {Buddee}}, \bibinfo {author} {\bibfnamefont {Ketsarin}\ \bibnamefont
+  {Dilokkhunakul}}, \ and\ \bibinfo {author} {\bibfnamefont {Peerathat}\
+  \bibnamefont {Pinpithak}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {Amorphous titanium dioxide: a recyclable dye remover for water treatment},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of sol-gel
+  science and technology}\ }\textbf {\bibinfo {volume} {53}},\ \bibinfo {pages}
+  {162--170} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Jeong}\ \emph {et~al.}(2010)\citenamefont {Jeong},
+  \citenamefont {Lee},\ and\ \citenamefont {Choi}}]{useful3}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Hu~Young}\
+  \bibnamefont {Jeong}}, \bibinfo {author} {\bibfnamefont {Jeong~Yong}\
+  \bibnamefont {Lee}}, \ and\ \bibinfo {author} {\bibfnamefont {Sung-Yool}\
+  \bibnamefont {Choi}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {Interface-engineered amorphous tio2-based resistive memory devices},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Advanced
+  Functional Materials}\ }\textbf {\bibinfo {volume} {20}},\ \bibinfo {pages}
+  {3912--3917} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Petkov}\ \emph {et~al.}(1998)\citenamefont {Petkov},
+  \citenamefont {Holzh{\"u}ter}, \citenamefont {Tr{\"o}ge}, \citenamefont
+  {Gerber},\ and\ \citenamefont {Himmel}}]{exptl1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V}~\bibnamefont
+  {Petkov}}, \bibinfo {author} {\bibfnamefont {G}~\bibnamefont
+  {Holzh{\"u}ter}}, \bibinfo {author} {\bibfnamefont {U}~\bibnamefont
+  {Tr{\"o}ge}}, \bibinfo {author} {\bibfnamefont {Th}~\bibnamefont {Gerber}}, \
+  and\ \bibinfo {author} {\bibfnamefont {B}~\bibnamefont {Himmel}},\ }\bibfield
+   {title} {\enquote {\bibinfo {title} {Atomic-scale structure of amorphous
+  tio2 by electron, x-ray diffraction and reverse monte carlo simulations},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of
+  non-crystalline solids}\ }\textbf {\bibinfo {volume} {231}},\ \bibinfo
+  {pages} {17--30} (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2008)\citenamefont {Zhang},
+  \citenamefont {Chen}, \citenamefont {Banfield},\ and\ \citenamefont
+  {Waychunas}}]{exptl2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Hengzhong}\
+  \bibnamefont {Zhang}}, \bibinfo {author} {\bibfnamefont {Bin}\ \bibnamefont
+  {Chen}}, \bibinfo {author} {\bibfnamefont {Jillian~F}\ \bibnamefont
+  {Banfield}}, \ and\ \bibinfo {author} {\bibfnamefont {Glenn~A}\ \bibnamefont
+  {Waychunas}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Atomic
+  structure of nanometer-sized amorphous tio 2},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo
+  {volume} {78}},\ \bibinfo {pages} {214106} (\bibinfo {year}
+  {2008})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Matsui}\ and\ \citenamefont {Akaogi}(1991)}]{MA_og}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Masanori}\

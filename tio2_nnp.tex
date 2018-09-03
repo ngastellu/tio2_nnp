@@ -46,7 +46,7 @@
 \title{
 %Using absolutely localized molecular orbitals for deeper physical insight into the nature of chemical bonding and linear-scaling calculations for condensed phase [binary] materials 
 %Localized electrons (orbitals) in materials modeling
-Using DFT to model $\text{TiO}_2$ nanoparticles
+Accuracy of purely classical description of $\text{TiO}_2$ nanoparticles
 %Absolutely localized orbitals for density functional theory modeling of [binary] materials
 }
 
@@ -58,7 +58,9 @@ Using DFT to model $\text{TiO}_2$ nanoparticles
 
 \date{\today}
 
-\begin{abstract} 
+\begin{abstract}
+
+\textsc{For chem396 report:} We compare the efficiencies of a classical forcefields and DFT when simulating the potential energy surface of amorphous $\text{TiO}_2$ nanoparticles.
 
 \end{abstract}
 
@@ -66,6 +68,20 @@ Using DFT to model $\text{TiO}_2$ nanoparticles
  
 
 \section*{Introduction} 
+
+\tab Titania ($\text{TiO}_2$) has long been the subject of notable research interest due to its high chemical stability and interesting optical, dielectric, mechanical, and photocatalytic properties\cite{optical,thin-film,mechanical,photocatalytic}. 
+While most works focus on $\text{TiO}_2$ in its most stable and common forms, which are all crystalline, a number of technological uses of this material rely on processing into film or powder form which both tend to be amorphous; further modification of the material is then needed to restore a certain level of crystalline order back to it\cite{a2c,ab_initio}.
+Dependence on this last step makes titania significantly more difficult and expensive to to use in industrial-scale applications, which has motivated researchers to study amorphous $\text{TiO}_2$ ($a-\text{TiO}_2$) in hope of being able to use in it cheaper, less processed forms\cite{useful1,useful2,useful3}. 
+%As such, there is a need for a better understanding of amorphous $\text{TiO}_2$'s structure and properties ($a-\text{TiO}_2$) in order to utilise them to their full potential in novel technological applications, but also to ensure that our current modes of implemening $a-\text{TiO}_2$ in devices will not exhibit any unforeseen behaviour due to our poor understanding of the material's characteristics. 
+
+\tab One of the defining traits of amorphous materials is their lack of long-range order, which makes their microstructure extremely hard to study experimentally.
+
+[SOME STUDIES THAT SUCCEEDED = purely experimental; THE BEST ONES = mixed expt + comp--> NEED FOR BETTER COMPUTATIONAL MODELS]
+
+Despite this, several research groups have been able to probe the local atomic atomic structure of $a-\text{TiO}_2$ with a certain level of detail using a combination of experimental techniques (e.g. wide-angle X-ray scattering, electron diffraction, X-ray absorption structure spectroscopy) and reverse Monte Carlo simulation \cite{exptl1,exptl2}.
+
+
+
 
 \textbf{Main focus = Accuracy}
 
@@ -220,6 +236,8 @@ Seeing as ALMO DFT makes a number of large DFT calculations much more feasible, 
 As before, we evaluate the accuracy of the ALMO DFT method by comparing the energy it outputs for a given configuration of a nanoparticle with the energy obtained through classical DFT.  
 
 \section*{Conclusions} 
+
+$\bullet$ ALMO needed to study size-dependence of certain properties
 
 
 
