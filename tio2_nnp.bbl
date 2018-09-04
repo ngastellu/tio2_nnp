@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{22}%
+\begin{thebibliography}{27}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -293,7 +293,7 @@
   DL-TR-96-001: Evaluation of $\text{TiO}_2 force fields.$}}},\ \bibinfo {type}
   {Tech. Rep.}\ (\bibinfo  {institution} {Council for the Central Laboratory of
   Research Councils},\ \bibinfo {year} {1996})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Van~Hoang}(2007)}]{vvh2007}%
+\bibitem [{\citenamefont {Van~Hoang}(2007)}]{vvh1}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Vo}~\bibnamefont
   {Van~Hoang}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Structural
@@ -301,6 +301,12 @@
   {\bibfield  {journal} {\bibinfo  {journal} {physica status solidi (b)}\
   }\textbf {\bibinfo {volume} {244}},\ \bibinfo {pages} {1280--1287} (\bibinfo
   {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {\textsc{cp2k} Developers~Group}(|2018|)}]{cp2k}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {\textsc{cp2k}
+  Developers~Group}},\ }\href@noop {} {\enquote {\bibinfo {title} {\textsc{2K}
+  open source molecular dynamics: www.cp2k.org},}\ } (\bibinfo {year}
+  {|2018|})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Alimohammadi}\ and\ \citenamefont
   {Fichthorn}(2009)}]{fichtorn}%
   \BibitemOpen
@@ -323,4 +329,55 @@
   rutile},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Physical Review B}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages}
   {3457} (\bibinfo {year} {1971})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Vandevondele}\ \emph {et~al.}(2005)\citenamefont
+  {Vandevondele}, \citenamefont {Krack}, \citenamefont {Mohamed}, \citenamefont
+  {Parrinello}, \citenamefont {Chassaing},\ and\ \citenamefont
+  {Hutter}}]{quickstep}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Vandevondele}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Krack}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Mohamed}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Parrinello}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Chassaing}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Hutter}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {Quickstep: Fast and accurate density functional
+  calculations using a mixed gaussian and plane waves approach},}\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Comput. Phys. Commun.}\
+  }\textbf {\bibinfo {volume} {167}},\ \bibinfo {pages} {103} (\bibinfo {year}
+  {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Selli}\ \emph {et~al.}(2017)\citenamefont {Selli},
+  \citenamefont {Fazio},\ and\ \citenamefont {Di~Valentin}}]{realistic_nnp}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Daniele}\ \bibnamefont
+  {Selli}}, \bibinfo {author} {\bibfnamefont {Gianluca}\ \bibnamefont {Fazio}},
+  \ and\ \bibinfo {author} {\bibfnamefont {Cristiana}\ \bibnamefont
+  {Di~Valentin}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Using
+  density functional theory to model realistic tio2 nanoparticles, their
+  photoactivation and interaction with water},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Catalysts}\ }\textbf {\bibinfo {volume}
+  {7}},\ \bibinfo {pages} {357} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hoang}\ \emph {et~al.}(2007)\citenamefont {Hoang},
+  \citenamefont {Zung},\ and\ \citenamefont {Trong}}]{vvh2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {VV}~\bibnamefont
+  {Hoang}}, \bibinfo {author} {\bibfnamefont {Hoang}\ \bibnamefont {Zung}}, \
+  and\ \bibinfo {author} {\bibfnamefont {Ngo Huynh~Buu}\ \bibnamefont
+  {Trong}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Structural
+  properties of amorphous tio 2 nanoparticles},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {The European Physical Journal D}\ }\textbf
+  {\bibinfo {volume} {44}},\ \bibinfo {pages} {515--524} (\bibinfo {year}
+  {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Khaliullin}\ \emph {et~al.}(2013)\citenamefont
+  {Khaliullin}, \citenamefont {VandeVondele},\ and\ \citenamefont
+  {Hutter}}]{almo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Rustam~Z}\
+  \bibnamefont {Khaliullin}}, \bibinfo {author} {\bibfnamefont {Joost}\
+  \bibnamefont {VandeVondele}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {Jürg}\ \bibnamefont {Hutter}},\ }\bibfield  {title} {\enquote {\bibinfo
+  {title} {Efficient linear-scaling density functional theory for molecular
+  systems},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of chemical theory and computation}\ }\textbf {\bibinfo {volume}
+  {9}},\ \bibinfo {pages} {4421--4427} (\bibinfo {year} {2013})}\BibitemShut
+  {NoStop}%
 \end{thebibliography}%

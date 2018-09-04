@@ -11,6 +11,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: tio2_nnpNotes.bib
 Database file #2: tio2_nnp.bib
+Warning--I didn't find a database entry for ""
 control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev41Control}, control.key{N/A}, control.author{00}, control.editor{1}, control.title{0}, control.pages{1}, control.year{0}, control.eprint{N/A}, 
 Warning--jnrlst (dependency: not reversed) set 1
@@ -24,45 +25,45 @@ Control: production of article title (0) allowed
 Control: page (1) range
 Control: year (0) verbatim
 Control: production of eprint (0) enabled
-You've used 24 entries,
+You've used 29 entries,
             5847 wiz_defined-function locations,
-            1772 strings with 19432 characters,
-and the built_in function-call counts, 26560 in all, are:
-= -- 1730
-> -- 711
-< -- 186
-+ -- 216
-- -- 182
-* -- 4188
-:= -- 2539
-add.period$ -- 43
-call.type$ -- 24
-change.case$ -- 110
-chr.to.int$ -- 34
-cite$ -- 24
-duplicate$ -- 2477
-empty$ -- 1954
-format.name$ -- 398
-if$ -- 5175
+            1804 strings with 20394 characters,
+and the built_in function-call counts, 31738 in all, are:
+= -- 2078
+> -- 849
+< -- 215
++ -- 258
+- -- 214
+* -- 5003
+:= -- 3054
+add.period$ -- 53
+call.type$ -- 29
+change.case$ -- 135
+chr.to.int$ -- 39
+cite$ -- 29
+duplicate$ -- 2963
+empty$ -- 2344
+format.name$ -- 475
+if$ -- 6190
 int.to.chr$ -- 1
-int.to.str$ -- 32
-missing$ -- 326
-newline$ -- 118
-num.names$ -- 66
-pop$ -- 964
+int.to.str$ -- 37
+missing$ -- 386
+newline$ -- 133
+num.names$ -- 81
+pop$ -- 1155
 preamble$ -- 1
-purify$ -- 88
+purify$ -- 108
 quote$ -- 0
-skip$ -- 920
+skip$ -- 1108
 stack$ -- 0
-substring$ -- 880
-swap$ -- 2403
-text.length$ -- 81
+substring$ -- 1019
+swap$ -- 2866
+text.length$ -- 96
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 335
+type$ -- 406
 warning$ -- 2
-while$ -- 93
+while$ -- 109
 width$ -- 0
-write$ -- 249
-(There were 2 warnings)
+write$ -- 292
+(There were 3 warnings)
