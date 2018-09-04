@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.2)  4 SEP 2018 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.2)  4 SEP 2018 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -657,6 +657,23 @@ Underfull \hbox (badness 2351) in paragraph at lines 145--149
  []
 
 [2]
+Package epstopdf Info: Source file: <./plots/conv_log.eps>
+(epstopdf)                    date: 2018-09-04 18:33:43
+(epstopdf)                    size: 34956 bytes
+(epstopdf)             Output file: <./plots/conv_log-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-09-04 18:34:14
+(epstopdf)                    size: 34538 bytes
+(epstopdf)             Command: <repstopdf --outfile=./plots/conv_log-eps-conve
+rted-to.pdf ./plots/conv_log.eps>
+(epstopdf)             \includegraphics on input line 176.
+Package epstopdf Info: Output file is already uptodate.
+ <./plots/conv_log-eps-converted-to.pdf, id=32, 361.35pt x 216.81pt>
+File: ./plots/conv_log-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./plots/conv_log-eps-converted-to.pdf>
+Package pdftex.def Info: ./plots/conv_log-eps-converted-to.pdf used on input li
+ne 176.
+(pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
 Package epstopdf Info: Source file: <./plots/rutile_72_scaled.eps>
 (epstopdf)                    date: 2018-08-29 15:43:30
 (epstopdf)                    size: 25055 bytes
@@ -666,15 +683,15 @@ pdf>
 (epstopdf)                    size: 8222 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/rutile_72_scaled-e
 ps-converted-to.pdf ./plots/rutile_72_scaled.eps>
-(epstopdf)             \includegraphics on input line 182.
+(epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<./plots/rutile_72_scaled-eps-converted-to.pdf, id=32, 361.35pt x 216.81pt>
+<./plots/rutile_72_scaled-eps-converted-to.pdf, id=33, 361.35pt x 216.81pt>
 File: ./plots/rutile_72_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/rutile_72_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/rutile_72_scaled-eps-converted-to.pdf used on 
-input line 182.
+input line 197.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
 Package epstopdf Info: Source file: <./plots/nnp_198_scaled.eps>
 (epstopdf)                    date: 2018-08-29 12:52:32
@@ -685,16 +702,22 @@ f>
 (epstopdf)                    size: 7754 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_198_scaled-eps
 -converted-to.pdf ./plots/nnp_198_scaled.eps>
-(epstopdf)             \includegraphics on input line 192.
+(epstopdf)             \includegraphics on input line 207.
 Package epstopdf Info: Output file is already uptodate.
 
-<./plots/nnp_198_scaled-eps-converted-to.pdf, id=33, 361.35pt x 216.81pt>
+<./plots/nnp_198_scaled-eps-converted-to.pdf, id=34, 361.35pt x 216.81pt>
 File: ./plots/nnp_198_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_198_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_198_scaled-eps-converted-to.pdf used on in
-put line 192.
+put line 207.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
+ [3 <./plots/conv_log-eps-converted-to.pdf> <./plots/rutile_72_scaled-eps-conve
+rted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 217.
+
 Package epstopdf Info: Source file: <./plots/nnp_390_scaled.eps>
 (epstopdf)                    date: 2018-08-29 12:54:08
 (epstopdf)                    size: 24738 bytes
@@ -704,22 +727,15 @@ f>
 (epstopdf)                    size: 7594 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_390_scaled-eps
 -converted-to.pdf ./plots/nnp_390_scaled.eps>
-(epstopdf)             \includegraphics on input line 205.
+(epstopdf)             \includegraphics on input line 220.
 Package epstopdf Info: Output file is already uptodate.
-
-<./plots/nnp_390_scaled-eps-converted-to.pdf, id=34, 361.35pt x 216.81pt>
+<./plots/nnp_390_scaled-eps-converted-to.pdf, id=49, 361.35pt x 216.81pt>
 File: ./plots/nnp_390_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_390_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_390_scaled-eps-converted-to.pdf used on in
-put line 205.
+put line 220.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
- [3 <./plots/rutile_72_scaled-eps-converted-to.pdf> <./plots/nnp_198_scaled-eps
--converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 216.
-
 Package epstopdf Info: Source file: <./plots/nnp_768_fully_scaled.eps>
 (epstopdf)                    date: 2018-08-29 13:08:26
 (epstopdf)                    size: 23933 bytes
@@ -729,15 +745,15 @@ Package epstopdf Info: Source file: <./plots/nnp_768_fully_scaled.eps>
 (epstopdf)                    size: 6817 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_768_fully_scal
 ed-eps-converted-to.pdf ./plots/nnp_768_fully_scaled.eps>
-(epstopdf)             \includegraphics on input line 219.
+(epstopdf)             \includegraphics on input line 234.
 Package epstopdf Info: Output file is already uptodate.
 
-<./plots/nnp_768_fully_scaled-eps-converted-to.pdf, id=49, 361.35pt x 216.81pt>
+<./plots/nnp_768_fully_scaled-eps-converted-to.pdf, id=50, 361.35pt x 216.81pt>
 File: ./plots/nnp_768_fully_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_768_fully_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_768_fully_scaled-eps-converted-to.pdf used
- on input line 219.
+ on input line 234.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
 Package epstopdf Info: Source file: <./plots/nnp_768_dilated.eps>
 (epstopdf)                    date: 2018-08-29 13:40:44
@@ -748,24 +764,24 @@ df>
 (epstopdf)                    size: 7412 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_768_dilated-ep
 s-converted-to.pdf ./plots/nnp_768_dilated.eps>
-(epstopdf)             \includegraphics on input line 233.
+(epstopdf)             \includegraphics on input line 248.
 Package epstopdf Info: Output file is already uptodate.
 
-<./plots/nnp_768_dilated-eps-converted-to.pdf, id=50, 361.35pt x 216.81pt>
+<./plots/nnp_768_dilated-eps-converted-to.pdf, id=51, 361.35pt x 216.81pt>
 File: ./plots/nnp_768_dilated-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_768_dilated-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_768_dilated-eps-converted-to.pdf used on i
-nput line 233.
+nput line 248.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
-
+ [4 <./plots/nnp_198_scaled-eps-converted-to.pdf> <./plots/nnp_390_scaled-eps-c
+onverted-to.pdf> <./plots/nnp_768_fully_scaled-eps-converted-to.pdf> <./plots/n
+np_768_dilated-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 251.
+               Default added (so using `tbp') on input line 266.
 
-[4 <./plots/nnp_390_scaled-eps-converted-to.pdf> <./plots/nnp_768_fully_scaled-
-eps-converted-to.pdf> <./plots/nnp_768_dilated-eps-converted-to.pdf>]
-(./tio2_nnp.bbl [5]
+[5] (./tio2_nnp.bbl
 Underfull \hbox (badness 1107) in paragraph at lines 166--172
  []\OT1/cmr/m/n/9 Hu Young Jeong, Jeong Yong Lee,  and Sung-Yool
  []
@@ -780,17 +796,18 @@ Underfull \hbox (badness 3977) in paragraph at lines 315--322
  []\OT1/cmr/m/n/9 Mozhgan Al-imo-ham-madi and Kris-ten A Fichthorn,
  []
 
+[6]
 Missing character: There is no Ì in font cmr9!
 Missing character: There is no ˆ in font cmr9!
-) [6] (./tio2_nnp.aux) ) 
+) [7] (./tio2_nnp.aux) ) 
 Here is how much of TeX's memory you used:
- 14615 strings out of 493089
- 274428 string characters out of 6134843
- 354208 words of memory out of 5000000
- 17777 multiletter control sequences out of 15000+600000
+ 14620 strings out of 493089
+ 274563 string characters out of 6134843
+ 332163 words of memory out of 5000000
+ 17781 multiletter control sequences out of 15000+600000
  20316 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,54p,505b,674s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,54p,505b,672s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
@@ -812,10 +829,10 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on tio2_nnp.pdf (6 pages, 287737 bytes).
+Output written on tio2_nnp.pdf (7 pages, 320559 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 152 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

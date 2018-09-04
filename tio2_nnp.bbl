@@ -375,18 +375,6 @@
   gaussian pseudopotentials},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
   {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {54}},\ \bibinfo
   {pages} {1703} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Hanneke}\ \emph {et~al.}(2008)\citenamefont
-  {Hanneke}, \citenamefont {Fogwell},\ and\ \citenamefont
-  {Gabrielse}}]{quantum_prediction}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D}~\bibnamefont
-  {Hanneke}}, \bibinfo {author} {\bibfnamefont {S}~\bibnamefont {Fogwell}}, \
-  and\ \bibinfo {author} {\bibfnamefont {G}~\bibnamefont {Gabrielse}},\
-  }\bibfield  {title} {\enquote {\bibinfo {title} {New measurement of the
-  electron magnetic moment and the fine structure constant},}\ }\href@noop {}
-  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
-  }\textbf {\bibinfo {volume} {100}},\ \bibinfo {pages} {120801} (\bibinfo
-  {year} {2008})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Selli}\ \emph {et~al.}(2017)\citenamefont {Selli},
   \citenamefont {Fazio},\ and\ \citenamefont {Di~Valentin}}]{realistic_nnp}%
   \BibitemOpen
@@ -398,6 +386,16 @@
   photoactivation and interaction with water},}\ }\href@noop {} {\bibfield
   {journal} {\bibinfo  {journal} {Catalysts}\ }\textbf {\bibinfo {volume}
   {7}},\ \bibinfo {pages} {357} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shojaee}\ and\ \citenamefont
+  {Mohammadizadeh}(2009)}]{tio2_dft}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E}~\bibnamefont
+  {Shojaee}}\ and\ \bibinfo {author} {\bibfnamefont {MR}~\bibnamefont
+  {Mohammadizadeh}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {First-principles elastic and thermal properties of tio2: a phonon
+  approach},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Physics: Condensed Matter}\ }\textbf {\bibinfo {volume} {22}},\
+  \bibinfo {pages} {015401} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hoang}\ \emph {et~al.}(2007)\citenamefont {Hoang},
   \citenamefont {Zung},\ and\ \citenamefont {Trong}}]{vvh2}%
   \BibitemOpen

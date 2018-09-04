@@ -159,22 +159,37 @@ The GTH pseudopotentials used in this study treated oxygen's $1s$ orbitals as pa
 
 \tab Before discussing the accuracy of our classically obtained energy values, we must first establish the accuracy of our DFT energy values for each system, since these values will serve as references to which we will compare the energies returned by the classical MD simulation.
 One of the main reasons why we expect our DFT results to be more realistic than the ones yielded by the classical MD simulations is that DFT's quantum formalism is better suited to describe systems at an atomic scale than the classical picture.
-Indeed, while classical mechanics remain a valid description of macroscopic systems (containing $\sim 10^6$ atoms), they do not apply to the behaviour of individual atoms, which are quantum objects (i.e. do not evolve deterministically and thus have to be described using time-evolving probability distributions).
+Indeed, while classical mechanics remain a valid description of macroscopic systems (containing $\sim 10^{24}$ atoms), they do not apply to the behaviour of individual atoms, which are quantum objects (i.e. do not evolve deterministically and thus have to be described using time-evolving probability distributions).
 Seeing as both methods implemented in this work describe the forces in amorphous $\text{TiO}_2$ nanoparticles atom by atom, it is safe to assume that the procedure rooted in the most accurate theoretical substrate (for describing microscopic systems) yields better results.
-
-\tab Furthermore, classical MD simulation rely on a fixed expression for the system's PES, whose parameters are empirically determined and thus subject to experimental error.
-On the other hand DFT computes the PES using its estimate of the system's electronic density $n(\textbf{r})$: both the determination of the density and its relation to the system's energy (using the nonempirical PBE functional $E\{n\}$) are done from starting principles.
-This implies that DFT relies on the accuracy quantum mechanics to yield correct results.
-Given that quantum theory has yielded some of the most precise predictions of all time\cite{quantum_prediction}, it is safe to assume that the DFT's underlying principles are sound. 
-[discuss APPROXIMATIONS (e.g. Born-Oppenheimer) necessary to make DFT tractable and how they pose little risk of messing up results.]
+Furthermore, classical MD simulation rely on a fixed expression for the system's PES, whose parameters are empirically determined and thus subject to experimental error.
+%On the other hand DFT computes the PES using its estimate of the system's electronic density $n(\textbf{r})$: both the determination of the density and its relation to the system's energy (using the nonempirical PBE functional $E\{n\}$) are done from starting principles.
+%This implies that DFT relies on the accuracy quantum mechanics to yield correct results.
+%Given that quantum theory has yielded some of the most precise predictions of all time\cite{quantum_prediction}, it is safe to assume that the DFT's underlying principles are sound. 
+%[discuss APPROXIMATIONS (e.g. Born-Oppenheimer) necessary to make DFT tractable and how they pose little risk of messing up results.]
 Another problem with the potential we used for our classical MD runs is the fact that its parameters been tailored to reproduce the structures and properties of crystalline titania whereas we are trying to verify its accuracy for $a-\text{TiO}_2$.
 
-[DISCUSS CONVERGENCE OF DFT CALCULATIONS; LITTLE CHANCE OF DRAMATIC NUMERICAL ERROR]
+\tab Going beyond merely conceptual arguments for assuming that our DFT results are more accurate than those we obtained using classical MD, we note that KS DFT has been extensively used to study amorphous and crystalline titania in various forms and environments with good success\cite{ab_initio,electronic_structure,realistic_nnp,tio2_dft}.
+DFT methods thus have a proven track record of correctly reproducing experimentally observed properties, which further comforts our assumption that the energy values we calculating using DFT are a good reference to which we can compare our classical results.
+
+\begin{figure}[htb]
+\begin{tikzpicture}
+  \node (img1)  {\includegraphics[scale=0.6]{./plots/conv_log.eps}};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {\# iterations};
+  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {ln($\|\nabla E\|$)};
+\end{tikzpicture}
+\caption{Logarithmic plot of convergence vs number of iterations for a conformation of the $r-\text{TiO}_{2}$ nanoparticle. The convergence for a similar DFT calculation on another system (crystalline boron nitride) showing much more numerical instability is shown in red, for comparison purposes.}
+\label{conv}
+\end{figure}
+
+\tab Finally, our DFT calculations have converged quickly in the majority of cases and have overall exhibited good numerical behaviour (e.g. no radical changes in energy from one iteration to the next, quasi-uniformly decreasing convergence and total energy over the entire length of the calculation).
+Figure \ref{conv} shows the convergence of a DFT calculation made on a conformation the 72-atom $r-\text{TiO}_2$ nanocrystal (in blue).
+As is clearly visible, the convergence steadily decreases as the calculation progresses thereby implying that the changes being made to the computed energy value are getting smaller with each iteration of the DFT energy calculation routine.
+This behaviour suggests that the calculation does not exhibit significant numerical error and that the result it outputs is very likely physical.
 
 \subsection{Comparing classical MD with KS DFT}
 
 \tab For each nanoparticle, we compare the classically evaluated energy of every configuration with the energy obtained through a DFT calculation for that some configuration. 
-We plot our results in figures 1-6; a $y=x$ line was added to every plot to give a better appreciation of the level of correlation between classical and DFT data sets.
+We plot our results in figures 2-6; a $y=x$ line was added to every plot to give a better appreciation of the level of correlation between classical and DFT data sets.
 This allows us to gauge the accuracy of MA forcefield; if the classical and quantum mechanical results are well correlated, then the purely classical representation of the forces in the nanoparticles is sufficiently accurate to discriminate between slight variations in a given system's configuration in a meaningful way and can therefore be used to simulate this system nanoparticles instead of DFT, which is much more computationally expensive.
 
 \begin{figure}[htb]
@@ -291,8 +306,6 @@ Regardless of how well the MA potential describes $r-\text{TiO}_2$, the data we 
 Having established our DFT results to be more accurate than the ones yielded by the MA potential, we can safely assume that the MA potential does not faithfully reproduce the PES of small titania nanoparticles.
 This holding true even for the set of energies obtained from a system which we believed to be well-described by both methods -- a 72-atom rutile nanocrystal -- raises some questions about the validity of our results and calls for further research into this topic.
 
-\tab While we discussed the soundness of our calculations in the previous
-
 %\begin{itemize}
 %\item Are surface sites responsible for the disagreement between our energy values for $r-\text{TiO}_2$?
 %\item How necessary is the additional detail provided by DFT calculations to derive meaningful results from simulations of $\text{TiO}_2$ nanoparticles? 
@@ -316,6 +329,7 @@ This would significantly reduces the memory cost and computation time of a DFT s
 \tab Being able to carry out cheap DFT calculations could eventually allow for full MD simulations of nanoparticulate titania using DFT.
 This would give researchers the means to generate atomic structures of $\text{TiO}_2$ nanoparticles from first principles only. 
 Comparing these $\textit{ab-initio}$ structures to those obtained through experiment or using classical potentials might also offer insight on how well-suited both simulations methods are to describing such systems.
+[Compare densities, bulk/surface coordination numbers, etc. of DFT-obtained structures with those obtained from expt or classical MD]
 
 \tab Finally, 
 %\tab Having observed that DFT calculations are necessary to properly sample from an $a-\text{TiO}_2$ nanoparticle's PES, we are now faced with the problem posed by the computing power necessary to run such calculations on large systems (i.e. nanoparticles containing more than $\sim\,$1000 atoms).
@@ -326,8 +340,6 @@ Comparing these $\textit{ab-initio}$ structures to those obtained through experi
 %As before, we evaluate the accuracy of the ALMO DFT method by comparing the energy it outputs for a given configuration of a nanoparticle with the energy obtained through classical DFT.  
 
 $\bullet$ ALMO also needed to study size-dependence of certain properties (structural and electronic)
-
-$\bullet$ Could also make large-nanoparticle simulations using smaller basis set for Ti. 
 
 $\bullet$ Do a DFT MD simulation and re-calculate energies of equilibrated snapshots using MA potential: compare.
 
