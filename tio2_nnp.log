@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.2)  4 SEP 2018 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.2)  4 SEP 2018 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,27 +591,27 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
-Class revtex4-1 Info: Patching array package. on input line 44.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 44.
+Class revtex4-1 Info: Patching array package. on input line 37.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 37.
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 44.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 44.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 44.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 37.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 37.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 37.
  (./tio2_nnp.aux)
 \openout1 = `tio2_nnp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -630,26 +630,31 @@ ABD: EveryShipout initializing macros
 )
 \openout3 = `tio2_nnpNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 58.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 58.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 90.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 83.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 128.
+               Default added (so using `tbp') on input line 121.
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 145--149
+\OT1/cmr/m/n/10 TION OF HOW PBE FUNC-TIONAL IS FULLY
+ []
 
 [2]
 Package epstopdf Info: Source file: <./plots/rutile_72_scaled.eps>
@@ -661,7 +666,7 @@ pdf>
 (epstopdf)                    size: 8222 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/rutile_72_scaled-e
 ps-converted-to.pdf ./plots/rutile_72_scaled.eps>
-(epstopdf)             \includegraphics on input line 174.
+(epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
 
 <./plots/rutile_72_scaled-eps-converted-to.pdf, id=32, 361.35pt x 216.81pt>
@@ -669,7 +674,7 @@ File: ./plots/rutile_72_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/rutile_72_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/rutile_72_scaled-eps-converted-to.pdf used on 
-input line 174.
+input line 182.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
 Package epstopdf Info: Source file: <./plots/nnp_198_scaled.eps>
 (epstopdf)                    date: 2018-08-29 12:52:32
@@ -680,7 +685,7 @@ f>
 (epstopdf)                    size: 7754 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_198_scaled-eps
 -converted-to.pdf ./plots/nnp_198_scaled.eps>
-(epstopdf)             \includegraphics on input line 184.
+(epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
 
 <./plots/nnp_198_scaled-eps-converted-to.pdf, id=33, 361.35pt x 216.81pt>
@@ -688,7 +693,7 @@ File: ./plots/nnp_198_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_198_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_198_scaled-eps-converted-to.pdf used on in
-put line 184.
+put line 192.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
 Package epstopdf Info: Source file: <./plots/nnp_390_scaled.eps>
 (epstopdf)                    date: 2018-08-29 12:54:08
@@ -699,7 +704,7 @@ f>
 (epstopdf)                    size: 7594 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_390_scaled-eps
 -converted-to.pdf ./plots/nnp_390_scaled.eps>
-(epstopdf)             \includegraphics on input line 197.
+(epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
 <./plots/nnp_390_scaled-eps-converted-to.pdf, id=34, 361.35pt x 216.81pt>
@@ -707,8 +712,14 @@ File: ./plots/nnp_390_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_390_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_390_scaled-eps-converted-to.pdf used on in
-put line 197.
+put line 205.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
+ [3 <./plots/rutile_72_scaled-eps-converted-to.pdf> <./plots/nnp_198_scaled-eps
+-converted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 216.
+
 Package epstopdf Info: Source file: <./plots/nnp_768_fully_scaled.eps>
 (epstopdf)                    date: 2018-08-29 13:08:26
 (epstopdf)                    size: 23933 bytes
@@ -718,19 +729,16 @@ Package epstopdf Info: Source file: <./plots/nnp_768_fully_scaled.eps>
 (epstopdf)                    size: 6817 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_768_fully_scal
 ed-eps-converted-to.pdf ./plots/nnp_768_fully_scaled.eps>
-(epstopdf)             \includegraphics on input line 211.
+(epstopdf)             \includegraphics on input line 219.
 Package epstopdf Info: Output file is already uptodate.
 
-<./plots/nnp_768_fully_scaled-eps-converted-to.pdf, id=35, 361.35pt x 216.81pt>
+<./plots/nnp_768_fully_scaled-eps-converted-to.pdf, id=49, 361.35pt x 216.81pt>
 File: ./plots/nnp_768_fully_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_768_fully_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_768_fully_scaled-eps-converted-to.pdf used
- on input line 211.
+ on input line 219.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
- [3 <./plots/rutile_72_scaled-eps-converted-to.pdf> <./plots/nnp_198_scaled-eps
--converted-to.pdf> <./plots/nnp_390_scaled-eps-converted-to.pdf> <./plots/nnp_7
-68_fully_scaled-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./plots/nnp_768_dilated.eps>
 (epstopdf)                    date: 2018-08-29 13:40:44
 (epstopdf)                    size: 23841 bytes
@@ -740,31 +748,29 @@ df>
 (epstopdf)                    size: 7412 bytes
 (epstopdf)             Command: <repstopdf --outfile=./plots/nnp_768_dilated-ep
 s-converted-to.pdf ./plots/nnp_768_dilated.eps>
-(epstopdf)             \includegraphics on input line 225.
+(epstopdf)             \includegraphics on input line 233.
 Package epstopdf Info: Output file is already uptodate.
 
-<./plots/nnp_768_dilated-eps-converted-to.pdf, id=60, 361.35pt x 216.81pt>
+<./plots/nnp_768_dilated-eps-converted-to.pdf, id=50, 361.35pt x 216.81pt>
 File: ./plots/nnp_768_dilated-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_768_dilated-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_768_dilated-eps-converted-to.pdf used on i
-nput line 225.
+nput line 233.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
-
-Underfull \hbox (badness 4954) in paragraph at lines 242--243
-[]\OT1/cmr/m/n/10 [UNPHYSICAL CON-FOR-MA-TIONS --> IN-COR-
- []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 244.
+               Default added (so using `tbp') on input line 251.
 
-[4 <./plots/nnp_768_dilated-eps-converted-to.pdf>] (./tio2_nnp.bbl
+[4 <./plots/nnp_390_scaled-eps-converted-to.pdf> <./plots/nnp_768_fully_scaled-
+eps-converted-to.pdf> <./plots/nnp_768_dilated-eps-converted-to.pdf>]
+(./tio2_nnp.bbl [5]
 Underfull \hbox (badness 1107) in paragraph at lines 166--172
  []\OT1/cmr/m/n/9 Hu Young Jeong, Jeong Yong Lee,  and Sung-Yool
  []
 
-[5]
+
 Underfull \hbox (badness 1005) in paragraph at lines 260--266
  []\OT1/cmr/m/n/9 Dae-Weon Kim, Naoya Enomoto, Zenbe-e Nak-a-gawa,
  []
@@ -778,13 +784,13 @@ Missing character: There is no Ì in font cmr9!
 Missing character: There is no ˆ in font cmr9!
 ) [6] (./tio2_nnp.aux) ) 
 Here is how much of TeX's memory you used:
- 14605 strings out of 493089
- 274218 string characters out of 6134843
- 336074 words of memory out of 5000000
- 17767 multiletter control sequences out of 15000+600000
+ 14615 strings out of 493089
+ 274428 string characters out of 6134843
+ 354208 words of memory out of 5000000
+ 17777 multiletter control sequences out of 15000+600000
  20316 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,54p,506b,674s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,54p,505b,674s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
@@ -806,7 +812,7 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on tio2_nnp.pdf (6 pages, 282206 bytes).
+Output written on tio2_nnp.pdf (6 pages, 287737 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream

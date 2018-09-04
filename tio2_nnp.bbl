@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{29}%
+\begin{thebibliography}{31}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -329,6 +329,14 @@
   rutile},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Physical Review B}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages}
   {3457} (\bibinfo {year} {1971})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Drabold}(2009)}]{melt_quenching}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {DA}~\bibnamefont
+  {Drabold}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Topics in the
+  theory of amorphous materials},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {The European Physical Journal B}\ }\textbf {\bibinfo
+  {volume} {68}},\ \bibinfo {pages} {1--21} (\bibinfo {year}
+  {2009})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Vandevondele}\ \emph {et~al.}(2005)\citenamefont
   {Vandevondele}, \citenamefont {Krack}, \citenamefont {Mohamed}, \citenamefont
   {Parrinello}, \citenamefont {Chassaing},\ and\ \citenamefont
@@ -367,6 +375,18 @@
   gaussian pseudopotentials},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
   {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {54}},\ \bibinfo
   {pages} {1703} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hanneke}\ \emph {et~al.}(2008)\citenamefont
+  {Hanneke}, \citenamefont {Fogwell},\ and\ \citenamefont
+  {Gabrielse}}]{quantum_prediction}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D}~\bibnamefont
+  {Hanneke}}, \bibinfo {author} {\bibfnamefont {S}~\bibnamefont {Fogwell}}, \
+  and\ \bibinfo {author} {\bibfnamefont {G}~\bibnamefont {Gabrielse}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {New measurement of the
+  electron magnetic moment and the fine structure constant},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
+  }\textbf {\bibinfo {volume} {100}},\ \bibinfo {pages} {120801} (\bibinfo
+  {year} {2008})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Selli}\ \emph {et~al.}(2017)\citenamefont {Selli},
   \citenamefont {Fazio},\ and\ \citenamefont {Di~Valentin}}]{realistic_nnp}%
   \BibitemOpen
