@@ -11,7 +11,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: tio2_nnpNotes.bib
 Database file #2: tio2_nnp.bib
-Warning--I didn't find a database entry for "dft_precision"
 Warning--I didn't find a database entry for ""
 control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev41Control}, control.key{N/A}, control.author{00}, control.editor{1}, control.title{0}, control.pages{1}, control.year{0}, control.eprint{N/A}, 
@@ -26,45 +25,45 @@ Control: production of article title (0) allowed
 Control: page (1) range
 Control: year (0) verbatim
 Control: production of eprint (0) enabled
-You've used 29 entries,
+You've used 31 entries,
             5847 wiz_defined-function locations,
-            1805 strings with 20407 characters,
-and the built_in function-call counts, 31738 in all, are:
-= -- 2078
-> -- 849
-< -- 215
-+ -- 258
-- -- 214
-* -- 5003
-:= -- 3054
-add.period$ -- 53
-call.type$ -- 29
-change.case$ -- 135
-chr.to.int$ -- 39
-cite$ -- 29
-duplicate$ -- 2963
-empty$ -- 2344
-format.name$ -- 475
-if$ -- 6190
+            1816 strings with 20695 characters,
+and the built_in function-call counts, 33876 in all, are:
+= -- 2222
+> -- 903
+< -- 227
++ -- 276
+- -- 226
+* -- 5339
+:= -- 3264
+add.period$ -- 57
+call.type$ -- 31
+change.case$ -- 145
+chr.to.int$ -- 41
+cite$ -- 31
+duplicate$ -- 3167
+empty$ -- 2508
+format.name$ -- 505
+if$ -- 6610
 int.to.chr$ -- 1
-int.to.str$ -- 37
-missing$ -- 386
-newline$ -- 133
-num.names$ -- 81
-pop$ -- 1155
+int.to.str$ -- 39
+missing$ -- 412
+newline$ -- 139
+num.names$ -- 87
+pop$ -- 1235
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 116
 quote$ -- 0
-skip$ -- 1108
+skip$ -- 1184
 stack$ -- 0
-substring$ -- 1019
-swap$ -- 2866
-text.length$ -- 96
+substring$ -- 1077
+swap$ -- 3060
+text.length$ -- 102
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 406
+type$ -- 434
 warning$ -- 2
-while$ -- 109
+while$ -- 115
 width$ -- 0
-write$ -- 292
-(There were 4 warnings)
+write$ -- 310
+(There were 3 warnings)

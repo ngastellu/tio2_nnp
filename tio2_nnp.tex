@@ -46,7 +46,7 @@
 \title{
 %Using absolutely localized molecular orbitals for deeper physical insight into the nature of chemical bonding and linear-scaling calculations for condensed phase [binary] materials 
 %Localized electrons (orbitals) in materials modeling
-Accuracy of a purely classical description of $\text{TiO}_2$ nanoparticles
+Comparative study of classical and DFT modelisation of $\text{TiO}_2$ nanoparticles
 %Absolutely localized orbitals for density functional theory modeling of [binary] materials
 }
 
@@ -88,10 +88,10 @@ There exist two approaches to MD simulations:
 
 \begin{itemize}
 \item the classical approach, which uses a predetermined potential ${V(\textbf{r}_1,...,\textbf{r}_N)}$ and Newton's equations of motion to calculate the trajectories and energies of all atoms in the simulation,
-\item the density functional theory (DFT) approach, which relies on a quantum mechanical description of the system to determine its electronic density from which all other physical quantities are then derived.
+\item the \textit{ab-initio} approach, which relies on a quantum mechanical description (usually density functional theory, or DFT) of the system to determine its electronic density from which all other physical quantities are then derived.
 \end{itemize}
 
-It is generally known that DFT is more accurate than classical simulations, due to the fact that classical mechanics do not apply at the atomic scale\cite{dft_precision}.
+It is known that DFT is more accurate than classical simulations, due to its more faithful description of interactions between each atoms in the system being studied.
 Unfortunately, DFT simulations of large systems ($\sim$1000 atoms) are much more difficult to implement due to the prohibitive amounts of memory needed and long computation times.
 Researchers have therefore put considerable effort into developing classical potentials that faithfully reproduce experimental measurements which could allow accurate simulations of $\text{TiO}_2$ (notably) without resorting to computationally expensive calculations\cite{kim,MA_og,opt_FF}.
 The potential devised by Matsui and Akaogi in 1991\cite{MA_og} has had notable success in describing the structural and mechanical properties of titania's different polytypes\cite{smith_collins,vvh1} and is thus the most widely used potential when simulating $\text{TiO}_2$ using classical MD. 
@@ -150,8 +150,11 @@ Doing so provided us with energy values which we expect to be well correlated wi
 \subsection{DFT calculations}
 
 \tab Having obtained equilibriated atomic structures for nanoparticles of different sizes, we sampled 101 conformations from the last $40\,$ps of the last cooling run, at which point all four nanoparticles were in equilibrium with $T = 300\,\text{K}$ thermal bath.
-We then ran a single-point energy calculation on each conformation using KS DFT at the PBE/DZVP level of theory, using a plane wave cutoff of 2000$\,$Ry using \textsc{CP2K}'s Quickstep module for DFT calculations\cite{quickstep}.
+We then ran a single-point energy calculation on each conformation using traditional Kohn-Sham (KS) DFT at the PBE/DZVP level of theory, using a plane wave cutoff of 2000$\,$Ry using \textsc{CP2K}'s Quickstep module for DFT calculations\cite{quickstep}.
 We also ran similar DFT calculations on the different configurations of the reference rutile lattice which we also sampled from the last $40\,$ps of the MD simulation we mentioned in the last paragraph of the last section.
+
+\tab Seeing as core electrons have been shown to have a negligible impact on the interatomic interactions in $\text{TiO}_2$\cite{comp_exptl3,electronic_structure} (especially at $p=0\,$GPa), we used norm-conserving pseudopotentials developed by Goedecker, Teter, and Hutter\cite{gth} to avoid having to explicitly account for them in our electronic density optimisation routine, thereby making our \textit{ab-initio} calculations significantly computationally cheaper.
+The GTH pseudopotentials used in this study treated oxygen's $1s$ orbitals as part of its core and included all but titanum's $3p,\,3d,$ and $4s$ electrons into titanium's core.
 
 %\tab Our results are discussed in the next section and plotted in figures 1-5, in which we plot the DFT energies of every configuration of a given nanoparticle vs the classically computed energies of those same configurations.
 %We also added a $y = x$ line to help the reader any kind of correlation between both data sets. 
@@ -295,8 +298,8 @@ This could furthermore enable us to run simulations of nanoparticles with sizes 
 
 \tab Another way to run similar calculations on larger $\text{TiO}_2$ nanoparticles would be use smaller basis sets.
 While the basis set we used to describe oxygen's electronic distribution (DZVP) cannot be further reduced without removing a polarisation function (which is crucial to adequately describe chemical bonding), the basis set we used for Ti explicitly describes the electrons in its three highest occupied subshells ($3p,\,3d,$ and $4s$).
-Knowing that we can safely assume that titanum's six $3p$ elctrons have negligible impact on bonding in $\text{TiO}_2$, we can use a basis set and pseudopotential which treat them as core electrons.
-This would significantly reduces the memory cost a DFT simulation of any system containing numerous Ti atoms, thus making DFT calculations on large $\text{TiO}_2$ nanoparticles more easily feasible.
+Knowing that we can safely assume that titanum's six $3p$ elctrons have negligible impact on bonding in $\text{TiO}_2$\cite{electronic_structure}, we can use a basis set and pseudopotential which treat them as core electrons.
+This would significantly reduces the memory cost and computation time of a DFT simulation of any system containing numerous Ti atoms, thus making DFT calculations on large $\text{TiO}_2$ nanoparticles more easily feasible.
 
 [DISCUSSION OF SECOND QUESTION]
 

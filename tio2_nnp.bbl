@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{27}%
+\begin{thebibliography}{29}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -345,6 +345,28 @@
   {} {\bibfield  {journal} {\bibinfo  {journal} {Comput. Phys. Commun.}\
   }\textbf {\bibinfo {volume} {167}},\ \bibinfo {pages} {103} (\bibinfo {year}
   {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Landmann}\ \emph {et~al.}(2012)\citenamefont
+  {Landmann}, \citenamefont {Rauls},\ and\ \citenamefont
+  {Schmidt}}]{electronic_structure}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M}~\bibnamefont
+  {Landmann}}, \bibinfo {author} {\bibfnamefont {E}~\bibnamefont {Rauls}}, \
+  and\ \bibinfo {author} {\bibfnamefont {WG}~\bibnamefont {Schmidt}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {The electronic structure and
+  optical response of rutile, anatase and brookite tio2},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of physics: condensed
+  matter}\ }\textbf {\bibinfo {volume} {24}},\ \bibinfo {pages} {195503}
+  (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Goedecker}\ \emph {et~al.}(1996)\citenamefont
+  {Goedecker}, \citenamefont {Teter},\ and\ \citenamefont {Hutter}}]{gth}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S}~\bibnamefont
+  {Goedecker}}, \bibinfo {author} {\bibfnamefont {M}~\bibnamefont {Teter}}, \
+  and\ \bibinfo {author} {\bibfnamefont {J{\"u}rg}\ \bibnamefont {Hutter}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Separable dual-space
+  gaussian pseudopotentials},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {54}},\ \bibinfo
+  {pages} {1703} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Selli}\ \emph {et~al.}(2017)\citenamefont {Selli},
   \citenamefont {Fazio},\ and\ \citenamefont {Di~Valentin}}]{realistic_nnp}%
   \BibitemOpen
