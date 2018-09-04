@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{31}%
+\begin{thebibliography}{32}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -337,6 +337,16 @@
   {\bibinfo  {journal} {The European Physical Journal B}\ }\textbf {\bibinfo
   {volume} {68}},\ \bibinfo {pages} {1--21} (\bibinfo {year}
   {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Perdew}\ \emph {et~al.}(1996)\citenamefont {Perdew},
+  \citenamefont {Burke},\ and\ \citenamefont {Ernzerhof}}]{pbe}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Perdew}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Burke}}, \
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Ernzerhof}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Generalized gradient
+  approximation made simple},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {77}},\ \bibinfo
+  {pages} {3865} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Vandevondele}\ \emph {et~al.}(2005)\citenamefont
   {Vandevondele}, \citenamefont {Krack}, \citenamefont {Mohamed}, \citenamefont
   {Parrinello}, \citenamefont {Chassaing},\ and\ \citenamefont
