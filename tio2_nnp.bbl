@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{21}%
+\begin{thebibliography}{22}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -311,4 +311,16 @@
   nanocrystals: preferential alignment},}\ }\href@noop {} {\bibfield  {journal}
   {\bibinfo  {journal} {Nano letters}\ }\textbf {\bibinfo {volume} {9}},\
   \bibinfo {pages} {4198--4203} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Traylor}\ \emph {et~al.}(1971)\citenamefont
+  {Traylor}, \citenamefont {Smith}, \citenamefont {Nicklow},\ and\
+  \citenamefont {Wilkinson}}]{traylor}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Joseph~Gibson}\
+  \bibnamefont {Traylor}}, \bibinfo {author} {\bibfnamefont {HG}~\bibnamefont
+  {Smith}}, \bibinfo {author} {\bibfnamefont {RM}~\bibnamefont {Nicklow}}, \
+  and\ \bibinfo {author} {\bibfnamefont {MK}~\bibnamefont {Wilkinson}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Lattice dynamics of
+  rutile},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review B}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages}
+  {3457} (\bibinfo {year} {1971})}\BibitemShut {NoStop}%
 \end{thebibliography}%
