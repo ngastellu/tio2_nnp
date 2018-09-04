@@ -76,22 +76,31 @@ Dependence on this last step makes titania significantly more difficult and expe
 
 \tab One of the defining traits of amorphous materials is their lack of long-range order, which makes their microstructure extremely hard to study experimentally.
 
-[SOME STUDIES THAT SUCCEEDED = purely experimental; THE BEST ONES = mixed expt + comp--> NEED FOR BETTER COMPUTATIONAL MODELS]
+%[SOME STUDIES THAT SUCCEEDED = purely experimental; THE BEST ONES = mixed expt + comp--> NEED FOR BETTER COMPUTATIONAL MODELS]
+In spite of this, recent experimental studies have been successful in describing the local atomic structure of $a-\text{TiO}_2$ under different environments\cite{exptl1,exptl2,exptl3} by measuring things like the coordination number of bulk and surface Ti atoms and average bond lengths, using various types X-ray absorption structure spectroscopy.
+However, the most detailed investigations of amorphous titania's structure have been those combining experimental methods (e.g. X-ray absorbtion spectroscopy) with the computation modeling (notably reverse Monte-Carlo simulations)\cite{comp_exptl1,comp_exptl2,comp_exptl3}.
+Our reliance on simulations to properly understand this material is a major research incentive for theoretical chemists to devise the computational tools to perform such simulations adequately.
 
-Despite this, several research groups have been able to probe the local atomic atomic structure of $a-\text{TiO}_2$ with a certain level of detail using a combination of experimental techniques (e.g. wide-angle X-ray scattering, electron diffraction, X-ray absorption structure spectroscopy) and reverse Monte Carlo simulation \cite{exptl1,exptl2}.
+\tab Seeing as $a-\text{TiO}_2$ nanoparticles are almost always used for inhomogeneous catalysis purposes, it is often needed to simulate their structure's evolution over time (e.g. the duration of a given reaction or phase transition).
+This is the purview of molecular dynamics (MD) simulations.
+There exist two approaches to MD simulations:
+
+\begin{itemize}
+\item the classical approach, which uses a predetermined potential ${U(\textbf{r}_1,...,\textbf{r}_N)}$ and Newton's equations of motion to calculate the trajectories and energies of all atoms in the simulation,
+\item the density functional theory (DFT) approach, which relies on a quantum mechanical description of the system to determine its electronic density from which all other physical quantities are then derived.
+\end{itemize}
+
+It is generally known that DFT is more accurate than classical simulations, due to the fact that classical mechanics do not apply at the atomic scale.
+Unfortunately, DFT simulations of large systems ($\sim$1000 atoms) are much more difficult to implement due to the prohibitive amounts of memory needed and long computation times.
+Researchers have therefore put considerable effort into developing classical potentials that faithfully reproduce experimental measurements which could allow accurate simulations of $\text{TiO}_2$ (notably) without resorting to computationally expensive calculations\cite{kim,MA_og,opt_FF}.
+The potential devised by Matsui and Akaogi in 1991\cite{MA_og} has had notable success in describing the structural and mechanical properties of titania's different polytypes\cite{smith_collins,vvh2007} and is thus the most widely used potential when simulating $\text{TiO}_2$ using classical MD. 
+In this work, we focus our attention on nanoparticulate $a-\text{TiO}_2$ (such as can be found in unprocessed powder form) and on whether this classical potential can accurately calculate sample from its potential energy surface (PES).
+We compare the energies yielded by the classical and quantum descriptions of the system to see how well correlated they are.
+In this paper, we begin by describing our different calculation methods, then we present and discuss our results, before introducing potential directions for future research.
 
 
+%Despite this, several research groups have been able to probe the local atomic atomic structure of $a-\text{TiO}_2$ with a certain level of detail using a combination of experimental techniques (e.g. wide-angle X-ray scattering, electron diffraction, X-ray absorption structure spectroscopy) and reverse Monte Carlo simulation \cite{comp_exptl1,cexptl2}.
 
-
-\textbf{Main focus = Accuracy}
-
-$\bullet$ Accuracy of classical forcefields
-
-$\bullet$ Accuracy of ALMO DFT
-
-$\bullet$ Reference = KS DFT
-
-$\bullet$ System = amorphous titania nanoparticles (mention why this system is physically relevant)
 
 \section*{Simulation details}
 
@@ -237,7 +246,9 @@ As before, we evaluate the accuracy of the ALMO DFT method by comparing the ener
 
 \section*{Conclusions} 
 
-$\bullet$ ALMO needed to study size-dependence of certain properties
+$\bullet$ MA potential not sufficient to 
+
+$\bullet$ ALMO needed to study size-dependence of certain properties (structural and electronic)
 
 
 

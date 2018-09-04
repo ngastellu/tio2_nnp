@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{15}%
+\begin{thebibliography}{21}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -168,9 +168,49 @@
   }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Advanced
   Functional Materials}\ }\textbf {\bibinfo {volume} {20}},\ \bibinfo {pages}
   {3912--3917} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Luca}\ \emph {et~al.}(1998)\citenamefont {Luca},
+  \citenamefont {Djajanti},\ and\ \citenamefont {Howe}}]{exptl1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Vittorio}\
+  \bibnamefont {Luca}}, \bibinfo {author} {\bibfnamefont {Samitha}\
+  \bibnamefont {Djajanti}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {Russell~F}\ \bibnamefont {Howe}},\ }\bibfield  {title} {\enquote {\bibinfo
+  {title} {Structural and electronic properties of sol- gel titanium oxides
+  studied by x-ray absorption spectroscopy},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {The Journal of Physical Chemistry B}\
+  }\textbf {\bibinfo {volume} {102}},\ \bibinfo {pages} {10650--10657}
+  (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yoshitake}\ \emph {et~al.}(2003)\citenamefont
+  {Yoshitake}, \citenamefont {Sugihara},\ and\ \citenamefont
+  {Tatsumi}}]{exptl2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Hideaki}\ \bibnamefont
+  {Yoshitake}}, \bibinfo {author} {\bibfnamefont {Tae}\ \bibnamefont
+  {Sugihara}}, \ and\ \bibinfo {author} {\bibfnamefont {Takashi}\ \bibnamefont
+  {Tatsumi}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Xafs study on
+  the local structure of ti in amorphous mesoporous titania},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Chemistry Chemical
+  Physics}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {767--772}
+  (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fern{\'a}ndez-Garc{\'\i}a}\ \emph
+  {et~al.}(2007)\citenamefont {Fern{\'a}ndez-Garc{\'\i}a}, \citenamefont
+  {Belver}, \citenamefont {Hanson}, \citenamefont {Wang},\ and\ \citenamefont
+  {Rodriguez}}]{exptl3}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Marcos}\ \bibnamefont
+  {Fern{\'a}ndez-Garc{\'\i}a}}, \bibinfo {author} {\bibfnamefont {Carolina}\
+  \bibnamefont {Belver}}, \bibinfo {author} {\bibfnamefont {Jonathan~C}\
+  \bibnamefont {Hanson}}, \bibinfo {author} {\bibfnamefont {Xianqin}\
+  \bibnamefont {Wang}}, \ and\ \bibinfo {author} {\bibfnamefont {Jos{\'e}~A}\
+  \bibnamefont {Rodriguez}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {Anatase-tio2 nanomaterials: Analysis of key parameters controlling
+  crystallization},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of the American Chemical Society}\ }\textbf {\bibinfo {volume}
+  {129}},\ \bibinfo {pages} {13604--13612} (\bibinfo {year}
+  {2007})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Petkov}\ \emph {et~al.}(1998)\citenamefont {Petkov},
   \citenamefont {Holzh{\"u}ter}, \citenamefont {Tr{\"o}ge}, \citenamefont
-  {Gerber},\ and\ \citenamefont {Himmel}}]{exptl1}%
+  {Gerber},\ and\ \citenamefont {Himmel}}]{comp_exptl1}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V}~\bibnamefont
   {Petkov}}, \bibinfo {author} {\bibfnamefont {G}~\bibnamefont
@@ -184,7 +224,7 @@
   {pages} {17--30} (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2008)\citenamefont {Zhang},
   \citenamefont {Chen}, \citenamefont {Banfield},\ and\ \citenamefont
-  {Waychunas}}]{exptl2}%
+  {Waychunas}}]{comp_exptl2}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Hengzhong}\
   \bibnamefont {Zhang}}, \bibinfo {author} {\bibfnamefont {Bin}\ \bibnamefont
@@ -195,6 +235,34 @@
   {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo
   {volume} {78}},\ \bibinfo {pages} {214106} (\bibinfo {year}
   {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Triana}\ \emph {et~al.}(2016)\citenamefont {Triana},
+  \citenamefont {Araujo}, \citenamefont {Ahuja}, \citenamefont {Niklasson},\
+  and\ \citenamefont {Edvinsson}}]{comp_exptl3}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~A.}\ \bibnamefont
+  {Triana}}, \bibinfo {author} {\bibfnamefont {C.~Moyses}\ \bibnamefont
+  {Araujo}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Ahuja}},
+  \bibinfo {author} {\bibfnamefont {G.~A.}\ \bibnamefont {Niklasson}}, \ and\
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Edvinsson}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {Electronic transitions induced by
+  short-range structural order in amorphous ${\mathrm{tio}}_{2}$},}\ }\href
+  {\doibase 10.1103/PhysRevB.94.165129} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo
+  {pages} {165129} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kim}\ \emph {et~al.}(1996)\citenamefont {Kim},
+  \citenamefont {Enomoto}, \citenamefont {Nakagawa},\ and\ \citenamefont
+  {Kawamura}}]{kim}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Dae-Weon}\
+  \bibnamefont {Kim}}, \bibinfo {author} {\bibfnamefont {Naoya}\ \bibnamefont
+  {Enomoto}}, \bibinfo {author} {\bibfnamefont {Zenbe-e}\ \bibnamefont
+  {Nakagawa}}, \ and\ \bibinfo {author} {\bibfnamefont {Katsuyuki}\
+  \bibnamefont {Kawamura}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {Molecular dynamic simulation in titanium dioxide polymorphs: Rutile,
+  brookite, and anatase},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of the American Ceramic Society}\ }\textbf {\bibinfo
+  {volume} {79}},\ \bibinfo {pages} {1095--1099} (\bibinfo {year}
+  {1996})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Matsui}\ and\ \citenamefont {Akaogi}(1991)}]{MA_og}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Masanori}\
@@ -205,6 +273,17 @@
   {\bibinfo  {journal} {Molecular Simulation}\ }\textbf {\bibinfo {volume}
   {6}},\ \bibinfo {pages} {239--244} (\bibinfo {year} {1991})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Brandt}\ and\ \citenamefont
+  {Lyubartsev}(2015)}]{opt_FF}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Erik~G}\ \bibnamefont
+  {Brandt}}\ and\ \bibinfo {author} {\bibfnamefont {Alexander~P}\ \bibnamefont
+  {Lyubartsev}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Systematic
+  optimization of a force field for classical simulations of tio2--water
+  interfaces},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Journal of Physical Chemistry C}\ }\textbf {\bibinfo {volume} {119}},\
+  \bibinfo {pages} {18110--18125} (\bibinfo {year} {2015})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Collins}\ and\ \citenamefont
   {Smith}(1996)}]{smith_collins}%
   \BibitemOpen
@@ -214,6 +293,14 @@
   DL-TR-96-001: Evaluation of $\text{TiO}_2 force fields.$}}},\ \bibinfo {type}
   {Tech. Rep.}\ (\bibinfo  {institution} {Council for the Central Laboratory of
   Research Councils},\ \bibinfo {year} {1996})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Van~Hoang}(2007)}]{vvh2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Vo}~\bibnamefont
+  {Van~Hoang}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Structural
+  properties of simulated liquid and amorphous tio2},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {physica status solidi (b)}\
+  }\textbf {\bibinfo {volume} {244}},\ \bibinfo {pages} {1280--1287} (\bibinfo
+  {year} {2007})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Alimohammadi}\ and\ \citenamefont
   {Fichthorn}(2009)}]{fichtorn}%
   \BibitemOpen
@@ -224,12 +311,4 @@
   nanocrystals: preferential alignment},}\ }\href@noop {} {\bibfield  {journal}
   {\bibinfo  {journal} {Nano letters}\ }\textbf {\bibinfo {volume} {9}},\
   \bibinfo {pages} {4198--4203} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Van~Hoang}(2007)}]{vvh2007}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Vo}~\bibnamefont
-  {Van~Hoang}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Structural
-  properties of simulated liquid and amorphous tio2},}\ }\href@noop {}
-  {\bibfield  {journal} {\bibinfo  {journal} {physica status solidi (b)}\
-  }\textbf {\bibinfo {volume} {244}},\ \bibinfo {pages} {1280--1287} (\bibinfo
-  {year} {2007})}\BibitemShut {NoStop}%
 \end{thebibliography}%
