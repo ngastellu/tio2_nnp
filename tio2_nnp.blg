@@ -11,6 +11,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: tio2_nnpNotes.bib
 Database file #2: tio2_nnp.bib
+Warning--I didn't find a database entry for "dft_precision"
 Warning--I didn't find a database entry for ""
 control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev41Control}, control.key{N/A}, control.author{00}, control.editor{1}, control.title{0}, control.pages{1}, control.year{0}, control.eprint{N/A}, 
@@ -27,7 +28,7 @@ Control: year (0) verbatim
 Control: production of eprint (0) enabled
 You've used 29 entries,
             5847 wiz_defined-function locations,
-            1804 strings with 20394 characters,
+            1805 strings with 20407 characters,
 and the built_in function-call counts, 31738 in all, are:
 = -- 2078
 > -- 849
@@ -66,4 +67,4 @@ warning$ -- 2
 while$ -- 109
 width$ -- 0
 write$ -- 292
-(There were 3 warnings)
+(There were 4 warnings)

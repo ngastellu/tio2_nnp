@@ -46,7 +46,7 @@
 \title{
 %Using absolutely localized molecular orbitals for deeper physical insight into the nature of chemical bonding and linear-scaling calculations for condensed phase [binary] materials 
 %Localized electrons (orbitals) in materials modeling
-Accuracy of purely classical description of $\text{TiO}_2$ nanoparticles
+Accuracy of a purely classical description of $\text{TiO}_2$ nanoparticles
 %Absolutely localized orbitals for density functional theory modeling of [binary] materials
 }
 
@@ -60,7 +60,10 @@ Accuracy of purely classical description of $\text{TiO}_2$ nanoparticles
 
 \begin{abstract}
 
-\textsc{For chem396 report:} We compare the efficiencies of a classical forcefields and DFT when simulating the potential energy surface of amorphous $\text{TiO}_2$ nanoparticles.
+We calculate the energy of various conformations of amorphous titania nanoparticles (obtained using classical MD simulations) using the classical two-body MA potential and traditional KS DFT.
+Comparing the energies we obtained for each configuration, through both calculation methods, lead to the observation that the set of values obtained using a classical formalism was only weakly correlated with the energy values returned by DFT.
+Even systems which were expected to be well parameterised  by the MA potential (in our case, an $r-\text{TiO}_2$ nanocrystal) exhibited almost no correlation between both sets of calculated energies.
+We discuss possible reasons for this discrepancy between both calculation methods in and conclude by examining the questions raised by our results; chief among them are the suitability of the classical picture for $a-\text{TiO}_2$ nanoparticles and the necessity of DFT-level precision in computational simulations of such systems.
 
 \end{abstract}
 
@@ -84,11 +87,11 @@ This is the purview of molecular dynamics (MD) simulations.
 There exist two approaches to MD simulations:
 
 \begin{itemize}
-\item the classical approach, which uses a predetermined potential ${U(\textbf{r}_1,...,\textbf{r}_N)}$ and Newton's equations of motion to calculate the trajectories and energies of all atoms in the simulation,
+\item the classical approach, which uses a predetermined potential ${V(\textbf{r}_1,...,\textbf{r}_N)}$ and Newton's equations of motion to calculate the trajectories and energies of all atoms in the simulation,
 \item the density functional theory (DFT) approach, which relies on a quantum mechanical description of the system to determine its electronic density from which all other physical quantities are then derived.
 \end{itemize}
 
-It is generally known that DFT is more accurate than classical simulations, due to the fact that classical mechanics do not apply at the atomic scale.
+It is generally known that DFT is more accurate than classical simulations, due to the fact that classical mechanics do not apply at the atomic scale\cite{dft_precision}.
 Unfortunately, DFT simulations of large systems ($\sim$1000 atoms) are much more difficult to implement due to the prohibitive amounts of memory needed and long computation times.
 Researchers have therefore put considerable effort into developing classical potentials that faithfully reproduce experimental measurements which could allow accurate simulations of $\text{TiO}_2$ (notably) without resorting to computationally expensive calculations\cite{kim,MA_og,opt_FF}.
 The potential devised by Matsui and Akaogi in 1991\cite{MA_og} has had notable success in describing the structural and mechanical properties of titania's different polytypes\cite{smith_collins,vvh1} and is thus the most widely used potential when simulating $\text{TiO}_2$ using classical MD. 
@@ -156,6 +159,8 @@ We also ran similar DFT calculations on the different configurations of the refe
 \section*{Results and discussion}
 
 [DISCUSS WHY WE BELIEVE DFT RESULTS TO BE MORE ACCURATE THAN MA; well converged calculations, DFT has a proven track record, smaller systems are better described by QM models than classical models, etc.]
+
+\tab 
 
 \tab For each nanoparticle, we compare the classically evaluated energy of every configuration with the energy obtained through a DFT calculation for that some configuration. 
 We plot our results in figures 1-6; a $y=x$ line was added to every plot to give a better appreciation of the level of correlation between classical and DFT data sets.
@@ -231,6 +236,8 @@ This is consistent with the fact that the atomic configurations from which such 
 It is therefore reassuring to see that, within our classical MD simulation, snapshots which have similar structures are also predicted to have close energy values. 
 The contrast between the highly clustered classical values and the much more spread out quantum values could therefore suggest that the quantum description of $\text{TiO}_2$ is much more sensitive to the system's conformational changes while using the MA potential cannot meaningfully register such changes yet still provides an internally consistent and physically viable picture of the system.
 
+[UNPHYSICAL CONFORMATIONS --> INCORRECT DFT RESULTS?]
+
 \begin{table*}[]
 \begin{tabular}{c|c|c|c|c}
 System & $a-\text{TiO}_2$ (198 atoms) & $a-\text{TiO}_2$ (390 atoms) & $a-\text{TiO}_2$ (768 atoms)  & $r-\text{TiO}_2$ (72 atoms) \\ \hline
@@ -300,9 +307,7 @@ This would significantly reduces the memory cost a DFT simulation of any system 
 %Seeing as ALMO DFT makes a number of large DFT calculations much more feasible, we decide to test its accuracy on our various $a-\text{TiO}_2$ nanoparticles.
 %As before, we evaluate the accuracy of the ALMO DFT method by comparing the energy it outputs for a given configuration of a nanoparticle with the energy obtained through classical DFT.  
 
-$\bullet$ MA potential not sufficient to properly describe $a-\text{TiO}_2$
-
-$\bullet$ ALMO needed to study size-dependence of certain properties (structural and electronic)
+$\bullet$ ALMO also needed to study size-dependence of certain properties (structural and electronic)
 
 $\bullet$ Could also make large-nanoparticle simulations using smaller basis set for Ti. 
 
