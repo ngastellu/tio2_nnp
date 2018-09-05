@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.2)  4 SEP 2018 19:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.2)  4 SEP 2018 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,6 +707,12 @@ File: ./plots/nnp_198_scaled-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./plots/nnp_198_scaled-eps-converted-to.pdf used on in
 put line 208.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
+ [3 <./plots/conv_log-eps-converted-to.pdf> <./plots/rutile_72_scaled-eps-conve
+rted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 218.
+
 Package epstopdf Info: Source file: <./plots/nnp_390_scaled.eps>
 (epstopdf)                    date: 2018-08-29 12:54:08
 (epstopdf)                    size: 24738 bytes
@@ -718,19 +724,13 @@ f>
 -converted-to.pdf ./plots/nnp_390_scaled.eps>
 (epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
-
-<./plots/nnp_390_scaled-eps-converted-to.pdf, id=35, 361.35pt x 216.81pt>
+<./plots/nnp_390_scaled-eps-converted-to.pdf, id=49, 361.35pt x 216.81pt>
 File: ./plots/nnp_390_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_390_scaled-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_390_scaled-eps-converted-to.pdf used on in
 put line 221.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
- [3 <./plots/conv_log-eps-converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 232.
-
 Package epstopdf Info: Source file: <./plots/nnp_768_fully_scaled.eps>
 (epstopdf)                    date: 2018-08-29 13:08:26
 (epstopdf)                    size: 23933 bytes
@@ -743,7 +743,7 @@ ed-eps-converted-to.pdf ./plots/nnp_768_fully_scaled.eps>
 (epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<./plots/nnp_768_fully_scaled-eps-converted-to.pdf, id=44, 361.35pt x 216.81pt>
+<./plots/nnp_768_fully_scaled-eps-converted-to.pdf, id=50, 361.35pt x 216.81pt>
 File: ./plots/nnp_768_fully_scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_768_fully_scaled-eps-converted-to.pdf>
@@ -762,35 +762,31 @@ s-converted-to.pdf ./plots/nnp_768_dilated.eps>
 (epstopdf)             \includegraphics on input line 249.
 Package epstopdf Info: Output file is already uptodate.
 
-<./plots/nnp_768_dilated-eps-converted-to.pdf, id=45, 361.35pt x 216.81pt>
+<./plots/nnp_768_dilated-eps-converted-to.pdf, id=51, 361.35pt x 216.81pt>
 File: ./plots/nnp_768_dilated-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./plots/nnp_768_dilated-eps-converted-to.pdf>
 Package pdftex.def Info: ./plots/nnp_768_dilated-eps-converted-to.pdf used on i
 nput line 249.
 (pdftex.def)             Requested size: 216.81168pt x 130.08699pt.
- [4 <./plots/rutile_72_scaled-eps-converted-to.pdf> <./plots/nnp_198_scaled-eps
--converted-to.pdf> <./plots/nnp_390_scaled-eps-converted-to.pdf> <./plots/nnp_7
-68_fully_scaled-eps-converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 266.
-
+ [4 <./plots/nnp_198_scaled-eps-converted-to.pdf> <./plots/nnp_390_scaled-eps-c
+onverted-to.pdf> <./plots/nnp_768_fully_scaled-eps-converted-to.pdf> <./plots/n
+np_768_dilated-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 267.
+               Default added (so using `tbp') on input line 270.
 
-[5 <./plots/nnp_768_dilated-eps-converted-to.pdf>] (./tio2_nnp.bbl
+[5] (./tio2_nnp.bbl
 Underfull \hbox (badness 1107) in paragraph at lines 166--172
  []\OT1/cmr/m/n/9 Hu Young Jeong, Jeong Yong Lee,  and Sung-Yool
  []
 
-
+[6]
 Underfull \hbox (badness 1005) in paragraph at lines 260--266
  []\OT1/cmr/m/n/9 Dae-Weon Kim, Naoya Enomoto, Zenbe-e Nak-a-gawa,
  []
 
-[6]
+
 Underfull \hbox (badness 3977) in paragraph at lines 315--322
  []\OT1/cmr/m/n/9 Mozhgan Al-imo-ham-madi and Kris-ten A Fichthorn,
  []
@@ -799,10 +795,10 @@ Missing character: There is no Ì in font cmr9!
 Missing character: There is no ˆ in font cmr9!
 ) [7] (./tio2_nnp.aux) ) 
 Here is how much of TeX's memory you used:
- 14626 strings out of 493089
- 274628 string characters out of 6134843
- 334227 words of memory out of 5000000
- 17787 multiletter control sequences out of 15000+600000
+ 14624 strings out of 493089
+ 274609 string characters out of 6134843
+ 332227 words of memory out of 5000000
+ 17785 multiletter control sequences out of 15000+600000
  20316 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,54p,505b,672s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -827,7 +823,7 @@ cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on tio2_nnp.pdf (7 pages, 321920 bytes).
+Output written on tio2_nnp.pdf (7 pages, 322665 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
