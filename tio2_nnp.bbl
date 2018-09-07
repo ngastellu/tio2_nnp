@@ -307,6 +307,14 @@
   Developers~Group}},\ }\href@noop {} {\enquote {\bibinfo {title} {\textsc{2K}
   open source molecular dynamics: www.cp2k.org},}\ } (\bibinfo {year}
   {|2018|})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Drabold}(2009)}]{melt_quenching}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {DA}~\bibnamefont
+  {Drabold}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Topics in the
+  theory of amorphous materials},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {The European Physical Journal B}\ }\textbf {\bibinfo
+  {volume} {68}},\ \bibinfo {pages} {1--21} (\bibinfo {year}
+  {2009})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Alimohammadi}\ and\ \citenamefont
   {Fichthorn}(2009)}]{fichtorn}%
   \BibitemOpen
@@ -329,14 +337,6 @@
   rutile},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Physical Review B}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages}
   {3457} (\bibinfo {year} {1971})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Drabold}(2009)}]{melt_quenching}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {DA}~\bibnamefont
-  {Drabold}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Topics in the
-  theory of amorphous materials},}\ }\href@noop {} {\bibfield  {journal}
-  {\bibinfo  {journal} {The European Physical Journal B}\ }\textbf {\bibinfo
-  {volume} {68}},\ \bibinfo {pages} {1--21} (\bibinfo {year}
-  {2009})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Perdew}\ \emph {et~al.}(1996)\citenamefont {Perdew},
   \citenamefont {Burke},\ and\ \citenamefont {Ernzerhof}}]{pbe}%
   \BibitemOpen

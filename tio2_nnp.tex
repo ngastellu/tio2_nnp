@@ -39,7 +39,7 @@
 \title{
 %Using absolutely localized molecular orbitals for deeper physical insight into the nature of chemical bonding and linear-scaling calculations for condensed phase [binary] materials 
 %Localized electrons (orbitals) in materials modeling
-Comparative study of classical and DFT modelisation of amorphous $\text{TiO}_2$ nanoparticles
+Comparative study of classical and DFT models of amorphous titania nanoparticles
 %Absolutely localized orbitals for density functional theory modeling of [binary] materials
 }
 
@@ -53,9 +53,9 @@ Comparative study of classical and DFT modelisation of amorphous $\text{TiO}_2$ 
 
 \begin{abstract}
 
-We calculate the energy of various conformations of amorphous titania nanoparticles (obtained using classical MD simulations) using the classical two-body MA potential and traditional KS DFT.
+We calculate the energy of various conformations of amorphous titania nanoparticles (obtained using classical molecular dynamics simulations) using the empirical two-body Matsui-Akaogi potential and traditional Kohn-Sham density functional theory (KS DFT).
 Comparing the energies we obtained for each configuration, through both calculation methods, lead to the observation that the set of values obtained using a classical formalism was only weakly correlated with the energy values returned by DFT.
-Even systems which were expected to be well parameterised  by the MA potential (in our case, an $r-\text{TiO}_2$ nanocrystal) exhibited almost no correlation between both sets of calculated energies.
+Remarkably, even systems which were expected to be well parameterised  by the MA potential (in our case, an $r-\text{TiO}_2$ lattice) exhibited almost no correlation between both sets of calculated energies.
 We discuss possible reasons for this discrepancy between both calculation methods in and examine the questions raised by our results; chief among them, the suitability of the classical picture for $a-\text{TiO}_2$ nanoparticles.
 
 \end{abstract}
@@ -70,40 +70,51 @@ While most works focus on $\text{TiO}_2$ in its most stable and common forms, wh
 Dependence on this last step makes titania significantly more difficult and expensive to to use in industrial-scale applications, which has motivated researchers to study amorphous $\text{TiO}_2$ ($a-\text{TiO}_2$) in hope of being able to use in it cheaper, less processed forms\cite{useful1,useful2,useful3}. 
 %As such, there is a need for a better understanding of amorphous $\text{TiO}_2$'s structure and properties ($a-\text{TiO}_2$) in order to utilise them to their full potential in novel technological applications, but also to ensure that our current modes of implemening $a-\text{TiO}_2$ in devices will not exhibit any unforeseen behaviour due to our poor understanding of the material's characteristics. 
 
-\tab One of the defining traits of amorphous materials is their lack of long-range order, which makes their microstructure extremely hard to study experimentally.
-In spite of this, recent experimental studies have been successful in describing the local atomic structure of $a-\text{TiO}_2$ under different environments\cite{exptl1,exptl2,exptl3} by measuring things like the coordination number of bulk and surface Ti atoms and average bond lengths, using various types of X-ray absorption structure spectroscopy.
+\tab One of the defining traits of amorphous materials is their lack of long-range order, which makes their microstructure hard to study experimentally.
+In spite of this, recent experimental studies have been successful in describing the local atomic structure of $a-\text{TiO}_2$ under different environments\cite{exptl1,exptl2,exptl3} by measuring structural properties such as the coordination number of bulk and surface Ti atoms and average bond lengths, using various types of X-ray absorption structure spectroscopy.
 However, the most detailed investigations of amorphous titania's structure have been those combining experimental methods (e.g. X-ray absorbtion spectroscopy) with the computation modeling (notably reverse Monte-Carlo simulations)\cite{comp_exptl1,comp_exptl2,comp_exptl3}.
-Our reliance on simulations to properly understand this material is a major research incentive for theoretical chemists to devise the computational tools to perform such simulations adequately.
+Our reliance on simulations to properly understand this material is a major research incentive for theoretical chemists to devise the adequate computational tools.
 
-\tab Seeing as $a-\text{TiO}_2$ nanoparticles are almost always used for inhomogeneous catalysis purposes, it is often needed to simulate their structure's evolution over time (e.g. the duration of a given reaction or phase transition).
-This is the purview of molecular dynamics (MD) simulations.
-There exist two approaches to MD simulations:
+\tab While computational chemistry software employs a miscellany of procedures to generate results, one can distinguish two main approaches to running such calculations:
 
 \begin{itemize}
 \item the classical approach, which uses a predetermined potential ${V(\textbf{r}_1,...,\textbf{r}_N)}$ and Newton's equations of motion to calculate the trajectories and energies of all atoms in the simulation,
 \item the \textit{ab-initio} approach, which relies on a quantum mechanical description (usually density functional theory, or DFT) of the system to determine its electronic density from which all other physical quantities are then derived.
 \end{itemize}
 
-It is known that DFT is more accurate than classical simulations, due to its more faithful description of interactions between each atoms in the system being studied.
-Unfortunately, DFT simulations of large systems ($\sim$1000 atoms) are much more difficult to implement due to the prohibitive amounts of memory needed and long computation times.
+\tab DFT is generally considered more accurate than empirical force-field calculations, due to its more faithful description of interactions between each atoms in the system being studied.
+Unfortunately, DFT calculations on large systems ($\sim$1000 atoms) are much more difficult to implement due to the prohibitive amounts of memory needed and long computation times.
 Researchers have therefore put considerable effort into developing classical potentials that faithfully reproduce experimental measurements which could allow accurate simulations of $\text{TiO}_2$ (notably) without resorting to computationally expensive calculations\cite{kim,MA_og,opt_FF}.
 The potential devised by Matsui and Akaogi in 1991\cite{MA_og} has had notable success in describing the structural and mechanical properties of titania's different polytypes\cite{smith_collins,vvh1} and is thus the most widely used potential when simulating $\text{TiO}_2$ using classical MD. 
 In this work, we focus our attention on nanoparticulate $a-\text{TiO}_2$ (such as can be found in unprocessed powder form) and on whether this classical potential can accurately predict their structure-energy relationship, or potential energy surface (PES) ${V(\textbf{r}_1,...\textbf{r}_N)}$.
 We compare the energies yielded by the classical and quantum descriptions of the system to see how well correlated they are.
-In this paper, we begin by describing our different calculation methods, then we present and discuss our results, before introducing potential directions for future research.
+In this report, we describe our different calculation methods, then we present and discuss our results, before introducing potential directions for future research.
 
 
 %Despite this, several research groups have been able to probe the local atomic atomic structure of $a-\text{TiO}_2$ with a certain level of detail using a combination of experimental techniques (e.g. wide-angle X-ray scattering, electron diffraction, X-ray absorption structure spectroscopy) and reverse Monte Carlo simulation \cite{comp_exptl1,cexptl2}.
 
 
-\section{Simulation details}
+\section{Computational methods}
 
 The open-source atomistic simulations package \textsc{cp2k}\cite{cp2k} was used to run all calculations and simulations presented in this work.
 
-\subsection{Classical MD}
+\subsection{Obtaining nanoparticle structures}
 
-\tab All classical MD simulations described in this work were ran in the $NpT$ ensemble, using the Matsui-Akaogi (MA) potential to model the interactions between pairs of atoms.
-The MA potential was originally developed for classical MD simulations of the four main polytypes of crystalline $\text{TiO}_2$\cite{MA_og} to accurately simulate the structural properties of titania's four main polytypes and the elastic constants of rutile ($r-\text{TiO}_2$). 
+\tab We generated the atomic structures of $a-\text{TiO}_2$ nanoparticles using a series of classical MD simulations. 
+All classical MD simulations discussed below were ran in the $NpT$ ensemble, using the Matsui-Akaogi (MA) two-body potential (see next section) to model the interactions between pairs of atoms.
+The atomic structures of the various $a-\text{TiO}_2$ nanoparticles described in this work were obtained in multiple steps, using the melt-quenching method employed by a number of computational studies of amorphous materials\cite{ab_initio,melt_quenching}.
+We started by melting rutile ($r-\text{TiO}_2$) nanocrystals of 198, 390, and 768 atoms respectively whose structures were previously optimized \textit{via} DFT at the BLYP/DZVP level of theory (with a plane-wave energy cutoff of 2100 Ry) using classical MD in the $NpT$ ensemble with $T = 2000\,$K and $p_{\text{ext},0} = 0.0\,$Pa. 
+We ran this first round of simulations for 40000 timesteps of $\Delta t = 0.5\,$fs.
+The resulting melt was then cooled in three steps; classical MD simulations using the same potentials, ensemble, and number of steps were ran using $T = 1500\,$K,750$\,$K, and 300$\,$K successively, all with $\Delta t = 2.0\,$fs.
+This process simulated the annealing of the melted nanocrystals into a glass.
+Having obtained equilibriated atomic structures for nanoparticles of different sizes, we sampled 101 conformations from the last $40\,$ps of the last cooling run, at which point all four nanoparticles were in equilibrium with the $T = 300\,\text{K}$ thermal bath.
+
+\tab Seeing as the MA potential was originally elaborated to describe the describe the structural and elastic properties of bulk $r-\text{TiO}_2$, we also generated a set of conformations of a rutile lattice comprised of 72 atoms in the $NpT$ ensemble at $T = 300\,\text{K}$, using periodic boundary conditions to avoid surface effects.
+Doing so provided us with energy values which we expect to be well correlated with the ones we obtain with DFT methods, thus giving us a reference data set to which we could compare the rest of our results.
+
+\subsection{Empirical potential}
+
+\tab The MA potential was originally developed for classical MD simulations of the four main polytypes of crystalline $\text{TiO}_2$\cite{MA_og} to accurately simulate the structural properties of titania's four main polytypes and the elastic constants of rutile ($r-\text{TiO}_2$). 
 It is the most widely used potential when classically simulating bulk $\text{TiO}_2$ and has been shown by previous studies\cite{smith_collins,fichtorn,vvh1} to be the most adequate force field for predicting the structure and properties of its liquid and amorphous phases.
 The MA potential describes the short-range interaction between atoms with a Buckingham potential and their long-range electrostatic interaction using the traditional Coulomb term:
 \begin{equation}
@@ -111,7 +122,7 @@ V_{ij}(r) = f_{0}\cdot (B_i+B_j)\cdot\text{exp}\big(\frac{A_i + A_j - r}{B_i + B
 \end{equation}
 where $r$ denotes the distance between the two interacting ions $i$ and $j$, $e$ is the elementary charge, $Z_i$ is the dimensionless ionic charge of ion $i$, $f_0$ is a standard force of 4.184$\,$kJ$\cdot\text{mol}^{-1}\angstrom^{-1}$, and $A_i$, $B_i$, and $C_i$ are parameters corresponding to species $i$.
 The charges $Z_{\text{Ti}}$ and $Z_{\text{O}}$ were obtained from Traylor $\textit{et al.}$\cite{traylor}, who derived them from phonon dispersion curves he observed in rutile ($r-\text{TiO}_2$).
-The numerical values of the other constants listed above where determined by Matsui and Akagi by adjusting them adjusting them to reproduce the the observed elastic constants of rutile and fitting them to reproduce the structures of rutile, brookite, and anatase (the three polytypes of crystalline titania for which precise experimental measurements of lattice parameters were available at the time of their paper). 
+The numerical values of the other constants listed above where determined by Matsui and Akaogi by adjusting them adjusting them to reproduce the the observed elastic constants of rutile and fitting them to reproduce the structures of rutile, brookite, and anatase (the three polytypes of crystalline titania for which precise experimental measurements of lattice parameters were available at the time of their paper). 
 These values are given in table \ref{classpot}.
 The total potential energy of the system is then given by the sum of all pairwise interactions between all of its $N$ atoms:
 \begin{equation}
@@ -131,19 +142,9 @@ O       & -1.098      & 1.6339            & 0.117            & 54.0             
 \end{tabular}
 \end{table}
 
-\tab The atomic structures of the various $a-\text{TiO}_2$ nanoparticles described in this work were obtained in multiple steps, using the melt-quenching method employed by a number of computational studies of amorphous materials\cite{ab_initio,melt_quenching}.
-We started by melting rutile ($r-\text{TiO}_2$) nanocrystals of 198, 390, and 768 atoms respectively whose structures were previously optimized \textit{via} DFT at the BLYP/DZVP level of theory (with a plane-wave energy cutoff of 2100 Ry) using classical MD in the $NpT$ ensemble with $T = 2000\,$K and $p_{\text{ext},0} = 0.0\,$Pa. 
-We ran this first round of simulations for 40000 timesteps of $\Delta t = 0.5\,$fs.
-The resulting melt was then cooled in three steps; classical MD simulations using the same potentials, ensemble, and number of steps were ran using $T = 1500\,$K,750$\,$K, and 300$\,$K successively, all with $\Delta t = 2.0\,$fs.
-This process simulated the annealing of the melted nanocrystals into a glass which we then studied using Kohn-Sham DFT.
-
-\tab Seeing as the MA potential was originally elaborated to describe the describe the structural and elastic properties of $r-\text{TiO}_2$, we also generated a set of conformations of a rutile lattice comprised of 72 atoms in the $NpT$ ensemble at $T = 300\,\text{K}$, using the same potential as described above.
-Doing so provided us with energy values which we expect to be well correlated with the ones we obtain with DFT methods, thus giving us a reference data set to which we could compare the rest of our results.
-
 \subsection{DFT calculations}
 
-\tab Having obtained equilibriated atomic structures for nanoparticles of different sizes, we sampled 101 conformations from the last $40\,$ps of the last cooling run, at which point all four nanoparticles were in equilibrium with $T = 300\,\text{K}$ thermal bath.
-We then ran a single-point energy calculation on each conformation using traditional Kohn-Sham (KS) DFT in the generalised gradient approximation (GGA), with the fully non-empirical functional developed by Perdew, Burke, and Ernzerhof\cite{pbe} (i.e. the PBE functional).
+\tab We ran a single-point energy calculation on each conformation using traditional Kohn-Sham (KS) DFT in the generalised gradient approximation (GGA), with the fully non-empirical functional developed by Perdew, Burke, and Ernzerhof\cite{pbe} (i.e. the PBE functional).
 We employed a double-zeta valence polarised (DZVP) basis set, with a plane-wave cutoff of 2000$\,$Ry. 
 This was all implemented using \textsc{CP2K}'s Quickstep module for DFT calculations\cite{quickstep}.
 We also ran similar DFT calculations on the different configurations of the reference rutile lattice which we also sampled from the last $40\,$ps of the MD simulation we mentioned in the last paragraph of the last section.
@@ -172,20 +173,20 @@ Another problem with the potential we used for our classical MD runs is the fact
 \tab Going beyond merely conceptual arguments for assuming that our DFT results are more accurate than those we obtained using classical MD, we note that KS DFT has been extensively used to study amorphous and crystalline titania in various forms and environments with good success\cite{ab_initio,electronic_structure,realistic_nnp,tio2_dft}.
 DFT methods thus have a proven track record of correctly reproducing experimentally observed properties, which further comforts our assumption that the energy values we calculating using DFT are a good reference to which we can compare our classical results.
 
-\begin{figure}[htb]
-\begin{tikzpicture}
-  \node (img1)  {\includegraphics[scale=0.6]{./plots/conv_log.eps}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {\# iterations};
-  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {ln($\|\nabla E\|$)};
-\end{tikzpicture}
-\caption{Logarithmic plot of convergence vs number of iterations for a conformation of the $r-\text{TiO}_{2}$ nanoparticle. The convergence for a similar DFT calculation on another system (crystalline boron nitride) showing much more numerical instability is shown in red, for comparison purposes.}
-\label{conv}
-\end{figure}
+%\begin{figure}[htb]
+%\begin{tikzpicture}
+%  \node (img1)  {\includegraphics[scale=0.6]{./plots/conv_log.eps}};
+%  \node[below=of img1, node distance=0cm, yshift=1cm] {\# iterations};
+%  \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {ln($\|\nabla E\|$)};
+%\end{tikzpicture}
+%\caption{Logarithmic plot of convergence vs number of iterations for a conformation of the $r-\text{TiO}_{2}$ nanoparticle. The convergence for a similar DFT calculation on another system (crystalline boron nitride) showing much more numerical instability is shown in red, for comparison purposes.}
+%\label{conv}
+%\end{figure}
 
-\tab Finally, our DFT calculations have converged quickly in the majority of cases and have overall exhibited good numerical behaviour (e.g. no radical changes in energy from one iteration to the next, quasi-uniformly decreasing convergence and total energy over the entire length of the calculation).
-Figure \ref{conv} shows the convergence of a DFT calculation made on a conformation the 72-atom $r-\text{TiO}_2$ nanocrystal (in blue).
-As is clearly visible, the convergence steadily decreases as the calculation progresses thereby implying that the changes being made to the computed energy value are getting smaller with each iteration of the DFT energy calculation routine.
-This behaviour suggests that the calculation does not exhibit significant numerical error and that the result it outputs is very likely physical.
+%\tab Finally, our DFT calculations have converged quickly in the majority of cases and have overall exhibited good numerical behaviour (e.g. no radical changes in energy from one iteration to the next, quasi-uniformly decreasing convergence and total energy over the entire length of the calculation).
+%Figure \ref{conv} shows the convergence of a DFT calculation made on a conformation the 72-atom $r-\text{TiO}_2$ nanocrystal (in blue).
+%As is clearly visible, the convergence steadily decreases as the calculation progresses thereby implying that the changes being made to the computed energy value are getting smaller with each iteration of the DFT energy calculation routine.
+%This behaviour suggests that the calculation does not exhibit significant numerical error and that the result it outputs is very likely physical.
 
 \subsection{Comparing classical MD with KS DFT}
 
@@ -196,7 +197,7 @@ This allows us to gauge the accuracy of MA forcefield; if the classical and quan
 \begin{figure}[htb]
 \begin{tikzpicture}
   \node (img1)  {\includegraphics[scale=0.6]{./plots/rutile_72_scaled}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical}} - \bar{E}_{\text{classical}}$ (Ha/atom)};
   \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
 \end{tikzpicture}
 \caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $r-\text{TiO}_2$ lattice with 72 atoms.}
@@ -206,7 +207,7 @@ This allows us to gauge the accuracy of MA forcefield; if the classical and quan
 \begin{figure}[htb]
 \begin{tikzpicture}
   \node (img1)  {\includegraphics[scale=0.6]{./plots/nnp_198_scaled}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical}} - \bar{E}_{\text{classical}}$ (Ha/atom)};
   \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
 \end{tikzpicture}
 \caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 198 atoms.}
@@ -219,7 +220,7 @@ Indeed, plotting the energies yielded by both calculation methods reveals that D
 \begin{figure}[htb]
 \begin{tikzpicture}
   \node (img1)  {\includegraphics[scale=0.6]{./plots/nnp_390_scaled}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical}} - \bar{E}_{\text{classical}}$ (Ha/atom)};
   \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
 \end{tikzpicture}
 \caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 390 atoms.}
@@ -233,14 +234,14 @@ While this effect is most dramatic for the 768 atom system, every other nanopart
 \begin{figure}[htb]
 \begin{tikzpicture}
   \node (img1)  {\includegraphics[scale=0.6]{./plots/nnp_768_fully_scaled}};
-  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical} - \bar{E}_{\text{classical}}}$ (Ha/atom)};
+  \node[below=of img1, node distance=0cm, yshift=1cm] {$E_{\text{classical}} - \bar{E}_{\text{classical}}$ (Ha/atom)};
   \node[left=of img1, node distance=0cm, rotate=90, anchor=center,yshift=-0.7cm] {$E_{\text{DFT}} - \bar{E}_{\text{DFT}}$ (Ha/atom)};
 \end{tikzpicture}
 \caption{DFT energy vs. classical energy (both shifted down by their average value) for 101 conformations of an $a-\text{TiO}_2$ nanoparticle with 768 atoms.}
 \label{nnp_768}
 \end{figure}
   
-\tab All four nanoparticles we ran these calculations on exhibit weak correlation between the DFT-calculated energy values and the energies obtained using the MA potential. 
+\tab All four systems we ran these calculations on exhibit weak correlation between the DFT-calculated energy values and the energies obtained using the MA potential. 
 Even more surprisingly, we find that the two sets of energy values of the different conformations of the rutile lattice were even less correlated than the ones obtained from the amorphous nanoparticles. 
 As can be seen in table \ref{stats}, our simulated rutile lattice yielded the lowest value of $\rho$ of all the systems we studied.
 
@@ -257,7 +258,7 @@ As can be seen in table \ref{stats}, our simulated rutile lattice yielded the lo
 In light of this extremely low correlation, we cannot consider our simulated $r-\text{TiO}_2$ lattice a reference system.
 This unexpectedly poor correlation between these two sets of energy values also questions the accuracy of our DFT results, which have been our accuracy benchmark throughout this paper.
 
-\tab Assuming for now that our DFT calculations are indeed accurate, this lack of correlation between the energies obtained from $r-\text{TiO}_2$ is not overly problematic; it could simply suggests that a purely classical two-body description of atomic interactions in $\text{TiO}_2$ in the amorphous or rutile phase is not sufficiently accurate to keep track of small changes in the system's configuration.
+\tab Assuming that our DFT calculations are indeed accurate, this lack of correlation between the energies obtained from $r-\text{TiO}_2$ is not overly problematic; it could simply suggests that a purely classical two-body description of atomic interactions in $\text{TiO}_2$ in the amorphous or rutile phase is not sufficiently accurate to keep track of small changes in the system's configuration.
 Moreover the small RMSE values we get for all systems (except the 768-atom nanoparticle) and the fact that all classically obtained energies for a given system are very close to each other suggest that they are still physically sound at a less precise level of analysis.
 If both sets of energy values for each system varied over intervals of similar sizes and yet remained as uncorrelated as we have observed them to be, then the validity of trying to describe $\text{TiO}_2$ using only the MA potential would be seriously questioned.
 However this is not the case; for every system all energies computed classically differ very little.
@@ -277,17 +278,37 @@ RMSE   & 0.0486056                    & 0.0628487                    & 22.21090 
 \caption{Pearson correlation coefficient $\rho$ and RMSE between the energy values obtained through DFT and those obtained using the two-body MA potential on various configurations of different systems.}
 \end{table*}
 
-\tab As stated in the previous paragraph, it could also be possible that the results we obtained $\textit{via}$ DFT are inaccurate.
-While this is unlikely (see previous subsection), a few different factors could be responsible for corrupting our DFT data.
-One of the most plausible hypotheses is that we obtained our classical energy values from an MD simulation with $T=300\,$K while our DFT routine calculates the ground state energy of a system at $T=0\,$K.
-This discrepancy between the assumptions made by both calculation methods could explain why our energy values for our simulated $r-\text{TiO}_2$ nanostructures are so weakly correlated.
+%\tab As stated in the previous paragraph, it could also be possible that the results we obtained $\textit{via}$ DFT are inaccurate.
+%While this is unlikely (see previous subsection), a few different factors could be responsible for corrupting our DFT data.
+%A possible explanation is that we obtained our classical energy values from an MD simulation with $T=300\,$K while our DFT routine calculates the ground state energy of a system at $T=0\,$K.
+%This discrepancy between the assumptions made by both calculation methods could explain why our energy values for our simulated $r-\text{TiO}_2$ nanostructures are so weakly correlated.
+%This is unlikely however, seeing as the overwhelming majority of the system's electrons would remain in their ground state at $T=300\,$K, thus leaving the system's PES unchanged.
 
-\tab Another possible explanation for the uncorrelatedness of the $r-\text{TiO}_2$ energy sets is our simulated lattice's small size.
-As previously stated, the MA potential was developed to reproduce the bulk structures of $\text{TiO}_2$ in its various crystalline forms; the potential was developed by simulating nanocrystals ranging from 384 atoms to 576 atoms in size and the bulk properties of the different crystalline polytypes of titania were used to fix its energy parameters.
+\tab Surface effects could also be an important factor responsible for the uncorrelatedness of our $a-\text{TiO}_2$ energy values.  
+As previously stated, the MA potential was developed to reproduce the bulk structures of $\text{TiO}_2$ in its various crystalline forms; the potential was developed by simulating nanocrystals ranging from 384 atoms to 576 atoms in size and the bulk properties of the different crystalline polytypes of titania were used to fix its energy parameters\cite{MA_og}.
 Knowing that the surface sites of a $\text{TiO}_2$ nanoparticle (crystalline or amorphous) have significantly different atomic and electronic structures as bulk sites\cite{vvh1,realistic_nnp,vvh2}, it is easy to see how a model built to simulate systems containing mainly bulk sites can reach erroneous results when trying reproduce a nanoparticle with a significant portion of its atoms on the surface.
-It is probable that a classical MD simulation of a larger $r-\text{TiO}_2$ lattice would yield a better set of reference conformation and energy values.
+It is probable that conducting a similar study on set of larger $a-\text{TiO}_2$ nanoparticles would yield better correlated classical and DFT energy values.
 Unfortunately, running DFT single-point energy calculations on larger nanoparticles might prove to be prohibitively computationally expensive without optimising the DFT calculation scheme to handle systems with many atoms ($>1000$ atoms).
-Regardless of how well the MA potential describes $r-\text{TiO}_2$, the data we obtained from modeling amorphous systems unequivocally indicates that the picture of $\text{TiO}_2$ provided by the MA potential is not always consistent with the DFT's description of the material.
+
+\tab Computational expense being one of DFT's main drawbacks, a number of optimisation schemes have been proposed over the years to reduce both the amount of memory and the time necessary to run calculations on large systems ($\sim 1000$ atoms).
+Among them, the absolutely localised molecular orbitals\cite{almo} (ALMO) method partitions the simulated system into small fragments (usually the individual atoms or molecules that compose it) and runs traditional DFT on each fragment in parallel.
+This has the advantage of having a runtime that scales linearly with the number of fragments for large systems, while traditional DFT calculation runtimes scale cubically with the number of atoms being simulated.
+Seeing as ALMO DFT makes a number of large DFT calculations much more feasible, it would allow us to conduct a similar study on larger nanoparticles (with more bulk sites) which could potentially yield better correlated classical and DFT values.
+This could furthermore enable us to run simulations of nanoparticles with sizes closer to those of $a-\text{TiO}_2$ nanoparticles used in most practical applications ($\sim 4\,$nm\cite{realistic_nnp}) and therefore give us a better appreciation of how the MA potential performs on systems it is better adapted to model.
+
+\tab Another way to run similar calculations on larger $\text{TiO}_2$ nanoparticles would be use smaller basis sets.
+While the basis set we used to describe oxygen's electronic distribution (DZVP) cannot be further reduced without removing a polarisation function (which is crucial to adequately describe chemical bonding), the basis set we used for Ti explicitly describes the electrons in its three highest occupied subshells ($3p,\,3d,$ and $4s$).
+Knowing that we can safely assume that titanum's six $3p$ elctrons have negligible impact on bonding in $\text{TiO}_2$\cite{electronic_structure}, we can use a basis set and pseudopotential which treat them as core electrons.
+This would significantly reduce the memory cost and computation time of a DFT simulation of any system containing numerous Ti atoms, thus making DFT calculations on large $\text{TiO}_2$ nanoparticles more easily implementable.
+
+\tab Regardless of how well the MA potential describes $r-\text{TiO}_2$, the data we obtained from modeling amorphous systems unequivocally indicates that the picture of $\text{TiO}_2$ provided by the MA potential is not consistent with DFT's description of the material.
+
+%\tab Another possible explanation for the uncorrelatedness of the $r-\text{TiO}_2$ energy sets is our simulated lattice's small size.
+%As previously stated, the MA potential was developed to reproduce the bulk structures of $\text{TiO}_2$ in its various crystalline forms; the potential was developed by simulating nanocrystals ranging from 384 atoms to 576 atoms in size and the bulk properties of the different crystalline polytypes of titania were used to fix its energy parameters.
+%Knowing that the surface sites of a $\text{TiO}_2$ nanoparticle (crystalline or amorphous) have significantly different atomic and electronic structures as bulk sites\cite{vvh1,realistic_nnp,vvh2}, it is easy to see how a model built to simulate systems containing mainly bulk sites can reach erroneous results when trying reproduce a nanoparticle with a significant portion of its atoms on the surface.
+%It is probable that a classical MD simulation of a larger $r-\text{TiO}_2$ lattice would yield a better set of reference conformation and energy values.
+%Unfortunately, running DFT single-point energy calculations on larger nanoparticles might prove to be prohibitively computationally expensive without optimising the DFT calculation scheme to handle systems with many atoms ($>1000$ atoms).
+%Regardless of how well the MA potential describes $r-\text{TiO}_2$, the data we obtained from modeling amorphous systems unequivocally indicates that the picture of $\text{TiO}_2$ provided by the MA potential is not always consistent with the DFT's description of the material.
  
 
 %\begin{table*}[]
@@ -312,7 +333,7 @@ Regardless of how well the MA potential describes $r-\text{TiO}_2$, the data we 
 
 \tab Our comparison of the energy values we obtained through DFT and those calculated with the classical MA potential, on common sets of conformations of various $\text{TiO}_2$ nanoparticles has consistently revealed that these two data sets are weakly correlated.
 Having established our DFT results to be more accurate than the ones yielded by the MA potential, we can safely assume that the MA potential does not faithfully reproduce the PES of small titania nanoparticles.
-This holding true even for the set of energies obtained from a system which we believed to be well-described by both methods -- a 72-atom rutile nanocrystal -- raises some questions about the validity of our results and calls for further research into this topic.
+This holding true even for the set of energies obtained from a system which we believed to be well-described by both methods -- a 72-atom rutile lattice -- raises some questions about the validity of our results and calls for further research into this topic.
 
 %\begin{itemize}
 %\item Are surface sites responsible for the disagreement between our energy values for $r-\text{TiO}_2$?
@@ -322,20 +343,10 @@ This holding true even for the set of energies obtained from a system which we b
 
 %\tab Assuming that DFT calculations are necessary to properly sample from an $a-\text{TiO}_2$ nanoparticle's PES, we are now faced with the problem posed by the computing power necessary to run such calculations on large systems (i.e. nanoparticles containing more than $\sim\,$1000 atoms).
 
-\tab Conducting a similar study on larger nanoparticles could provide further insight.
-The structure and properties of large nanoparticles are less impacted by their surface sites than smaller nanoparticles\cite{realistic_nnp}.
-Computational expense being one of DFT's main drawbacks, a number of optimisation schemes have been proposed over the years to reduce both the amount of memory and the time necessary to run calculations on large systems ($\sim 1000$ atoms).
-Among them, the absolutely localised molecular orbitals\cite{almo} (ALMO) method partitions the simulated system into small fragments (usually the individual atoms or molecules that compose it) and runs traditional DFT on each fragment in parallel.
-This has the advantage of having a runtime that scales linearly with the number of fragments for large systems, while traditional DFT calculation runtimes scale cubically with the number of atoms being simulated.
-Seeing as ALMO DFT makes a number of large DFT calculations much more feasible, it would allow us to conduct a similar study on larger nanoparticles (with more bulk sites) which could potentially yield better correlated classical and DFT values.
-This could furthermore enable us to run simulations of nanoparticles with sizes closer to those of $a-\text{TiO}_2$ nanoparticles used in most practical applications ($\sim 4\,$nm\cite{realistic_nnp}) and therefore give us a better appreciation of how the MA potential performs on systems it is better adapted to model.
-
-\tab Another way to run similar calculations on larger $\text{TiO}_2$ nanoparticles would be use smaller basis sets.
-While the basis set we used to describe oxygen's electronic distribution (DZVP) cannot be further reduced without removing a polarisation function (which is crucial to adequately describe chemical bonding), the basis set we used for Ti explicitly describes the electrons in its three highest occupied subshells ($3p,\,3d,$ and $4s$).
-Knowing that we can safely assume that titanum's six $3p$ elctrons have negligible impact on bonding in $\text{TiO}_2$\cite{electronic_structure}, we can use a basis set and pseudopotential which treat them as core electrons.
-This would significantly reduce the memory cost and computation time of a DFT simulation of any system containing numerous Ti atoms, thus making DFT calculations on large $\text{TiO}_2$ nanoparticles more easily implementable.
-
-\tab Being able to carry out cheap DFT calculations could eventually allow for full MD simulations of nanoparticulate titania using DFT.
+\tab Conducting a similar study on larger nanoparticles could provide further insight,since
+the structure and properties of large nanoparticles are less impacted by their surface sites than smaller nanoparticles\cite{realistic_nnp}.
+This motivates the development of cheaper, more scalable DFT schemes.  
+Being able to carry out such calculations on large systems could eventually allow for full MD simulations of nanoparticulate titania using DFT.
 This would give researchers the means to generate atomic structures of $\text{TiO}_2$ nanoparticles from first principles only. 
 Comparing these $\textit{ab-initio}$ structures' properties (e.g. density, bulk/surface coordination number, average bond length) to those of structures obtained through experiment or using classical potentials might also offer insight on how well-suited both simulations methods are to describing such systems.
 Implementations of DFT that are optimised for large systems could also be used to study the size dependence of many of nanoparticulate titania's properties and to examine whether our current models can adequately account for them. 
