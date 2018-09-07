@@ -39,7 +39,7 @@
 \title{
 %Using absolutely localized molecular orbitals for deeper physical insight into the nature of chemical bonding and linear-scaling calculations for condensed phase [binary] materials 
 %Localized electrons (orbitals) in materials modeling
-Comparative study of classical and DFT models of amorphous titania nanoparticles
+Comparative study of empirical force-field and DFT models of amorphous $\text{TiO}_2$ nanoparticles
 %Absolutely localized orbitals for density functional theory modeling of [binary] materials
 }
 
@@ -53,10 +53,11 @@ Comparative study of classical and DFT models of amorphous titania nanoparticles
 
 \begin{abstract}
 
-We calculate the energy of various conformations of amorphous titania nanoparticles (obtained using classical molecular dynamics simulations) using the empirical two-body Matsui-Akaogi potential and traditional Kohn-Sham density functional theory (KS DFT).
-Comparing the energies we obtained for each configuration, through both calculation methods, lead to the observation that the set of values obtained using a classical formalism was only weakly correlated with the energy values returned by DFT.
-Remarkably, even systems which were expected to be well parameterised  by the MA potential (in our case, an $r-\text{TiO}_2$ lattice) exhibited almost no correlation between both sets of calculated energies.
-We discuss possible reasons for this discrepancy between both calculation methods in and examine the questions raised by our results; chief among them, the suitability of the classical picture for $a-\text{TiO}_2$ nanoparticles.
+We calculate the energy of the conformations of amorphous titania nanoparticles obtained in classical MD simulations at ZZZ~K using the classical two-body Matsui-Akaogi (MA) potential and Kohn-Sham density functional theory (DFT) in the Perdew-Burke-Ernzerhof approximation. 
+Comparative analysis of the energies shows the values obtained using the MAP formalism are only weakly correlated with those calculated with DFT. 
+Remarkably we also found that a simple rutile nanocrystal (RZK: is this a nanocrystal? it is supposed to be perfect periodic lattice), for which the MA potential is expected to be well-parameterized, exhibited almost no correlation between the two sets of calculated energies. 
+We discuss possible reasons for this discrepancy and examine implications of our results, chief among them is the suitability of the classical MA potential for amorphous titania nanoparticles.
+
 
 \end{abstract}
 
@@ -284,6 +285,21 @@ RMSE   & 0.0486056                    & 0.0628487                    & 22.21090 
 %This discrepancy between the assumptions made by both calculation methods could explain why our energy values for our simulated $r-\text{TiO}_2$ nanostructures are so weakly correlated.
 %This is unlikely however, seeing as the overwhelming majority of the system's electrons would remain in their ground state at $T=300\,$K, thus leaving the system's PES unchanged.
 
+\tab As we have seen, there is a serious discrepancy between the PES predicted by the MA force-field and that predicted by DFT.
+While this is hardly surprising, the difference between both models' respective PESs raises some interesting problems when trying to directly compare the energy of a particular arrangement of atoms given by both methods. 
+We obtained our structures from MD simulations that used the MA potential and allowed the atomic configurations of our different systems to equilibrate with the thermal bath of each run.
+We are therefore running all of our energy calculations on conformations sampled from the region surrounding a local minimum of the MA PES of our different systems, which implies that these conformations' MA energies will all be very close to one another ($|\nabla^N E_{\text{classical}}|\sim 0$ near a minimum of MA PES).
+This will not be the case for the energies we obtain using DFT because MA-obtained atomic configurations do not lie near a local minimum of the PES predicted by DFT.
+We can therefore expect $|\nabla^N E_{\text{DFT}}|$ to be non-negligible for those conformations, thus leading to large differences in DFT-computed energies from one configuration to the next.
+This is exactly what we observe for both crystalline and amorphous titania.
+Figure \ref{pes} shows a schematic explanation of how this disagreement between the two PESs yields the clustered values we observe in our MA energy sets and the disperse values characteristic of our DFT energy sets.
+
+\tab Our method of directly comparing the energies of individual conformations is therefore overly naive.
+A better way to compare the accuracy of DFT with the MA force-field would be to generate structures using both methods instead of comparing the energies of structures obtained solely using classical MD using the MA potential.
+One could then compare the structural properties (e.g. density, average bond lengths, etc.) of both sets of configurations to their experimentally observed values and determine which method yields the most precise predictions.
+A sketch-map\cite{sketch-map} algorithm could also be used to judge the similarity between DFT-obtained structures and those generted by the MA potential.
+The proportion of conformations obtained through both methods that are alike would give us another indicator of the level of agreement between both models. 
+
 \tab Surface effects could also be an important factor responsible for the uncorrelatedness of our $a-\text{TiO}_2$ energy values.  
 As previously stated, the MA potential was developed to reproduce the bulk structures of $\text{TiO}_2$ in its various crystalline forms; the potential was developed by simulating nanocrystals ranging from 384 atoms to 576 atoms in size and the bulk properties of the different crystalline polytypes of titania were used to fix its energy parameters\cite{MA_og}.
 Knowing that the surface sites of a $\text{TiO}_2$ nanoparticle (crystalline or amorphous) have significantly different atomic and electronic structures as bulk sites\cite{vvh1,realistic_nnp,vvh2}, it is easy to see how a model built to simulate systems containing mainly bulk sites can reach erroneous results when trying reproduce a nanoparticle with a significant portion of its atoms on the surface.
@@ -332,8 +348,10 @@ This would significantly reduce the memory cost and computation time of a DFT si
 %All of the systems we simulated showed weak correlation between the classical and DFT energy values.
 
 \tab Our comparison of the energy values we obtained through DFT and those calculated with the classical MA potential, on common sets of conformations of various $\text{TiO}_2$ nanoparticles has consistently revealed that these two data sets are weakly correlated.
+These results imply that the PES of a small $a-\text{TiO}_2$ predicted by the MA force-field is significantly different from the one produced by KS DFT.
 Having established our DFT results to be more accurate than the ones yielded by the MA potential, we can safely assume that the MA potential does not faithfully reproduce the PES of small titania nanoparticles.
-This holding true even for the set of energies obtained from a system which we believed to be well-described by both methods -- a 72-atom rutile lattice -- raises some questions about the validity of our results and calls for further research into this topic.
+This holding true even for the set of energies obtained from a system which we believed to be well-described by both methods -- a 72-atom rutile lattice -- raises some questions about the validity of our methods and calls for further research into this topic.
+The observed discrepancy between the PESs yielded by both models invalidates our approach of comparing the energies of different atomic configurations directly to one another; it fails to account for the change in topology between both energy surfaces thus making both methods appear more disparate than they might truly be.
 
 %\begin{itemize}
 %\item Are surface sites responsible for the disagreement between our energy values for $r-\text{TiO}_2$?
@@ -343,8 +361,7 @@ This holding true even for the set of energies obtained from a system which we b
 
 %\tab Assuming that DFT calculations are necessary to properly sample from an $a-\text{TiO}_2$ nanoparticle's PES, we are now faced with the problem posed by the computing power necessary to run such calculations on large systems (i.e. nanoparticles containing more than $\sim\,$1000 atoms).
 
-\tab Conducting a similar study on larger nanoparticles could provide further insight,since
-the structure and properties of large nanoparticles are less impacted by their surface sites than smaller nanoparticles\cite{realistic_nnp}.
+\tab Conducting classical and DFT simulations on larger nanoparticles could also provide further insight,since the structure and properties of large nanoparticles are less impacted by their surface sites than smaller nanoparticles\cite{realistic_nnp}.
 This motivates the development of cheaper, more scalable DFT schemes.  
 Being able to carry out such calculations on large systems could eventually allow for full MD simulations of nanoparticulate titania using DFT.
 This would give researchers the means to generate atomic structures of $\text{TiO}_2$ nanoparticles from first principles only. 

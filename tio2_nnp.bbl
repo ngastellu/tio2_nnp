@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{32}%
+\begin{thebibliography}{33}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -417,6 +417,18 @@
   {journal} {\bibinfo  {journal} {The European Physical Journal D}\ }\textbf
   {\bibinfo {volume} {44}},\ \bibinfo {pages} {515--524} (\bibinfo {year}
   {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ceriotti}\ \emph {et~al.}(2011)\citenamefont
+  {Ceriotti}, \citenamefont {Tribello},\ and\ \citenamefont
+  {Parrinello}}]{sketch-map}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Michele}\ \bibnamefont
+  {Ceriotti}}, \bibinfo {author} {\bibfnamefont {Gareth~A}\ \bibnamefont
+  {Tribello}}, \ and\ \bibinfo {author} {\bibfnamefont {Michele}\ \bibnamefont
+  {Parrinello}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Simplifying
+  the representation of complex free-energy landscapes using sketch-map},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Proceedings of the
+  National Academy of Sciences}\ }\textbf {\bibinfo {volume} {108}},\ \bibinfo
+  {pages} {13023--13028} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Khaliullin}\ \emph {et~al.}(2013)\citenamefont
   {Khaliullin}, \citenamefont {VandeVondele},\ and\ \citenamefont
   {Hutter}}]{almo}%
