@@ -293,6 +293,15 @@ This will not be the case for the energies we obtain using DFT because MA-obtain
 We can therefore expect $|\nabla^N E_{\text{DFT}}|$ to be non-negligible for those conformations, thus leading to large differences in DFT-computed energies from one configuration to the next.
 This is exactly what we observe for both crystalline and amorphous titania.
 Figure \ref{pes} shows a schematic explanation of how this disagreement between the two PESs yields the clustered values we observe in our MA energy sets and the disperse values characteristic of our DFT energy sets.
+For simplicity, both the $3N$-dimensional PESs obtained are represented as unidimensional and are assumed to be harmonic with local minima located near one another (i.e. functions of the form of $V(x) = k\cdot (x-x_0)^2$).
+As the figure clearly shows, two qualitatively similar PESs with slightly different topologies can yield energy values that are poorly correlated uncorrelated.
+
+\begin{figure*}
+\centering
+\includegraphics[scale=0.5]{./plots/pseudo-PES}
+\label{pes}
+\caption{Schematic representation of the fault in our approach. Here both PESs are assumed to be 1-dimensional (instead of depending on the $3N$ position variables of the system's $N$ atoms). We can see how conformations (black dots) sampled near the minimum of the MA PES (blue curve) are much more spread out in energy when projected on the PES obtained using DFT (red curve), yielding a similar comparison to the one drawn by our data.}
+\end{figure*}
 
 \tab Our method of directly comparing the energies of individual conformations is therefore overly naive.
 A better way to compare the accuracy of DFT with the MA force-field would be to generate structures using both methods instead of comparing the energies of structures obtained solely using classical MD using the MA potential.
