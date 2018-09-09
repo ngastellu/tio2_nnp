@@ -122,7 +122,7 @@ The MA potential describes the short-range interaction between atoms with a Buck
 V_{ij}(r) = f_{0}\cdot (B_i+B_j)\cdot\text{exp}\big(\frac{A_i + A_j - r}{B_i + B_j}\big) - \frac{C_{i}C_j}{r^6} + \frac{e\,Z_i\,Z_j}{4\pi\epsilon_0 r}\: ,
 \end{equation}
 where $r$ denotes the distance between the two interacting ions $i$ and $j$, $e$ is the elementary charge, $Z_i$ is the dimensionless ionic charge of ion $i$, $f_0$ is a standard force of 4.184$\,$kJ$\cdot\text{mol}^{-1}\angstrom^{-1}$, and $A_i$, $B_i$, and $C_i$ are parameters corresponding to species $i$.
-The charges $Z_{\text{Ti}}$ and $Z_{\text{O}}$ were obtained from Traylor $\textit{et al.}$\cite{traylor}, who derived them from phonon dispersion curves he observed in rutile ($r-\text{TiO}_2$).
+The charges $Z_{\text{Ti}}$ and $Z_{\text{O}}$ were obtained from Traylor $\textit{et al.}$\cite{traylor}, who derived them from phonon dispersion curves observed in rutile ($r-\text{TiO}_2$).
 The numerical values of the other constants listed above where determined by Matsui and Akaogi by adjusting them adjusting them to reproduce the the observed elastic constants of rutile and fitting them to reproduce the structures of rutile, brookite, and anatase (the three polytypes of crystalline titania for which precise experimental measurements of lattice parameters were available at the time of their paper). 
 These values are given in table \ref{classpot}.
 The total potential energy of the system is then given by the sum of all pairwise interactions between all of its $N$ atoms:
@@ -288,11 +288,11 @@ RMSE   & 0.0486056                    & 0.0628487                    & 22.21090 
 \tab As we have seen, there is a serious discrepancy between the PES predicted by the MA force-field and that predicted by DFT.
 While this is hardly surprising, the difference between both models' respective PESs raises some interesting problems when trying to directly compare the energy of a particular arrangement of atoms given by both methods. 
 We obtained our structures from MD simulations that used the MA potential and allowed the atomic configurations of our different systems to equilibrate with the thermal bath of each run.
-We are therefore running all of our energy calculations on conformations sampled from the region surrounding a local minimum of the MA PES of our different systems, which implies that these conformations' MA energies will all be very close to one another ($|\nabla^N E_{\text{classical}}|\sim 0$ near a minimum of MA PES).
+We are therefore running all of our energy calculations on conformations sampled from the region surrounding a local minimum of the MA PES of our different systems, which implies that these conformations' MA energies will all be very close to one another ($|\nabla^N V_{\text{classical}}|\sim 0$ near a minimum of the classical PES).
 This will not be the case for the energies we obtain using DFT because MA-obtained atomic configurations do not lie near a local minimum of the PES predicted by DFT.
-We can therefore expect $|\nabla^N E_{\text{DFT}}|$ to be non-negligible for those conformations, thus leading to large differences in DFT-computed energies from one configuration to the next.
+We can therefore expect $|\nabla^N V_{\text{DFT}}|$ to be non-negligible for those conformations, thus leading to large differences in DFT-computed energies from one configuration to the next.
 This is exactly what we observe for both crystalline and amorphous titania.
-Figure \ref{pes} shows a schematic explanation of how this disagreement between the two PESs yields the clustered values we observe in our MA energy sets and the disperse values characteristic of our DFT energy sets.
+Figure 5 shows a schematic explanation of how this disagreement between the two PESs yields the clustered values we observe in our MA energy sets and the disperse values characteristic of our DFT energy sets.
 For simplicity, both the $3N$-dimensional PESs obtained are represented as unidimensional and are assumed to be harmonic with local minima located near one another (i.e. functions of the form of $V(x) = k\cdot (x-x_0)^2$).
 As the figure clearly shows, two qualitatively similar PESs with slightly different topologies can yield energy values that are poorly correlated uncorrelated.
 
